@@ -124,7 +124,9 @@ price.innerText=el.price;
     
     var btn = document.createElement("icon");
     
-    btn.innerHTML='<i  style="font-size:25px;color:grey;background-color:white;border:none"  class="far fa-heart "></i>';
+    btn.setAttribute("class","fas fa-heart");
+    btn.setAttribute("id","wishheart");
+    btn.style.color = "grey"
     btn.style.marginLeft="20px"
     // btn.innerText = "Add Card";
     // btn.style.textAlign="center"
@@ -132,6 +134,13 @@ price.innerText=el.price;
 
     btn.addEventListener("click", function () {
         addToCart(el);
+        if(btn.style.color = "grey" ){
+            btn.style.color = "red";
+            count.innerText = "1";
+        }
+        else if(btn.style.color = "grey"){
+            count.innerText = "0";
+        }
       });
 
     box.append(img, name, price,strikedoffprice,btn);
@@ -150,7 +159,7 @@ function addToCart(el) {
     // robotData.push(el);
     arr.push(el)
     localStorage.setItem("cart", JSON.stringify(arr));
-    window.location.href="cart.html"
+    // window.location.href="cart.html"
   }
 
 
