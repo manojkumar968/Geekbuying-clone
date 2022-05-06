@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        #upperContainer {
+            display: flex;
+            width: 100%;
+            height: auto;
+            gap: 20Px;
+        }
+
+        #divForImg {
+            width: 45%;
+            height: auto;
+            /* border: 2px solid red; */
+        }
+
+        #productImg {
+            width: 100%;
+            height: 550px;
+        }
+
+        #divForProduvtDetail {
+            display: flex;
+            flex-direction: column;
+            gap: px;
+            width: 47%;
+            margin-top: 50px;
+            /* border: 2px solid red; */
+            /* align-items: unset; */
+        }
+
+        #dForBrandStar {
+            display: flex;
+            gap: 25px;
+            /* position: absolute; */
+            /* position: relative; */
+        }
+
+        .displayAndGap {
+            display: flex;
+            gap: 10px;
+        }
+
+        .fakeSlatColor {
+            color: #999999;
+        }
+
+        .displayFlex {
+            display: flex;
+            align-items: center;
+        }
+
+        .border {
+            /* border: 1px solid red; */
+        }
+
+        .fa-star {
+            color: #ff9c01;
+            margin-left: -5px;
+            font-size: 13px;
+        }
+
+        .gap {
+            gap: 10px;
+        }
+
+        #dForProNam {
+            height: 50px;
+            position: relative;
+        }
+
+        .margintop {
+            margin-top: 0px;
+        }
+
+        #star {
+            margin-top: -20px;
+        }
+
+        .fa-bolt {
+            font-size: 25px;
+        }
+
+        .colorWhite {
+            color: white;
+        }
+
+        .flashAndTimer {
+            background-color: #ff9c01;
+            height: 40px;
+        }
+
+        .orangeColor {
+            background-color: #ff9c01;
+        }
+
+        #flashAndTimerId {
+            justify-content: space-between;
+            padding-right: 20px;
+            padding-left: 20px;
+            /* position: relative; */
+        }
+
+        .timer {
+            gap: 4px;
+        }
+
+        .currentPrice {
+            color: #ff9c01;
+        }
+
+        .mainPriceDiv {
+            gap: 40px;
+            padding-left: 20px;
+            /* position: absolute; */
+
+        }
+
+        .offPrice {
+            padding: 3px;
+            ;
+        }
+
+        .colorBlue {
+            color: blue;
+        }
+
+        .offNewUser {
+            background-color: #de4576;
+            padding: 4px;
+        }
+
+        .coupenDiv {
+            padding-left: 20px;
+            cursor: pointer;
+        }
+
+        #dForTimerAndPrice {
+            padding-bottom: 20px;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            /* height: auto; */
+            /* justify-content: s */
+            /* position: absolute; */
+        }
+
+        #hoverDiv {
+            width: 40%;
+            /* height: 150px; */
+            padding: 0px 20px;
+            padding-top: 10px;
+            display: none;
+            position: absolute;
+            color: black;
+            background-color: white;
+            padding-bottom: 20px;
+            border: .5px dotted gray;
+
+            /* margin-top: 20px; */
+
+
+        }
+
+        .hoverUpperP {
+            font-size: 25px;
+            ;
+        }
+
+        .fetNowBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hoverText {
+            width: 70%;
+            height: 50%;
+            border-right: 1px dotted green;
+
+        }
+
+        .getNowBtnDiv {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+
+        .getNowBtn {
+            width: 55%;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgb(211, 70, 70);
+            cursor: pointer;
+        }
+
+        .valid7Day {
+            margin-top: -10px;
+        }
+
+        .maxSaveHover {
+            background-color: #f3f3f3;
+            margin-top: -7px;
+            /* padding-left: 7px; */
+            padding: 20px 7px;
+        }
+
+        #dForShip {
+            /* width: 100%;
+            height: 50px;
+            background-color: aquamarine; */
+        }
+
+        #dropDown:hover #hoverDiv {
+            display: block;
+        }
+
+        #dForitemCode {
+            /* position: absolute; */
+        }
+
+        #dForShip {
+            gap: 30px;
+            padding-left: 20px;
+        }
+
+        .countryDiv {
+            width: 70px;
+            height: 33px;
+            border: 1px solid blue;
+            color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .itemReduce,
+        .itemIncrease {
+            width: 32px;
+            height: 23px;
+            border: .5px solid grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .typeTotalProduct {
+            height: 20px;
+            width: 55px;
+            text-align: center;
+        }
+
+        #dForQuantity {
+            padding-left: 20px;
+            gap: 63px;
+        }
+
+        #dForShipping {
+            gap: 30px;
+            padding-left: 20px;
+        }
+
+        #dForBtn {
+            padding-left: 20px;
+        }
+
+        .buyNowBtn {
+            width: 180px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff5e5;
+            color: #ffb23a;
+            border: .5px solid #ffb23a;
+            cursor: pointer;
+        }
+
+        .addToCartBtn {
+            width: 180px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: #ffb23a;
+            border: none;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        .addToWishlist {
+            width: 180px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .fa-heart {
+            font-size: 20px;
+        }
+
+        .freeShip {
+            font-weight: bold;
+        }
+
+        .movePicContainer {
+            justify-content: center;
+            gap: 5px;
+            /* width: 70px */
+            width: 100%;
+            height: 70px;
+        }
+
+        .movePicContainer>div {
+            border: .5px solid blueviolet;
+            width: 70px;
+            height: 70px;
+        }
+
+        .smallProductImg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="upperContainer">
+        <div id="divForImg">
+            <img id="productImg" src="https://img.gkbcdn.com/s3/bn/2205/497705-626f45ba2b40c9339c112e8e.jpg" alt="img">
+            <div class="movePicContainer displayFlex border">
+                <!-- <div class="smallProductImg">
+                    <img id="img1" src="" alt="">
+                </div>
+                <div class="smallProductImg">
+                    <img id="img2" src="" alt="">
+                </div>
+                <div class="smallProductImg">
+                    <img id="img3" src="" alt="">
+                </div>
+                <div class="smallProductImg">
+                    <img id="img4" src="" alt="">
+                </div>
+                <div class="smallProductImg">
+                    <img id="img5" src="" alt="">
+                </div> -->
+            </div>
+        </div>
+        <div id="divForProduvtDetail">
+            <div id="dForProNam" class="border">
+                <h5 class="margintop">SENBONO Max2 Smartwatch for Men Touch Screen 24 Sports Modes Waterproof Fitness
+                    Tracker for iOS Android Black Leather</h5>
+            </div>
+            <div id="dForBrandStar" class="displayFlex border">
+                <div id="brand" class="displayAndGap">
+                    <h5 class="margintop">Brand:</h5>
+                    <h5 class="fakeSlatColor margintop">Senbono</h5>
+                </div>
+                <div id="starAndReview" class="displayFlex gap ">
+                    <div id="star" class="border ">
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                    </div>
+                    <h5 class="margintop">25</h5>
+                    <h5 class="fakeSlatColor margintop">Review</h5>
+                </div>
+                <div id="question" class="displayFlex  gap">
+                    <h5 class="margintop">0</h5>
+                    <h5 class="fakeSlatColor margintop">Answered Question</h5>
+                </div>
+            </div>
+            <div id="dForitemCode" class="displayFlex  gap border">
+                <h5 class="margintop">Item Code:</h5>
+                <h5 class="fakeSlatColor margintop">497705</h5>
+            </div>
+            <div id="dForTimerAndPrice" class=" colorWhite border">
+                <div id="flashAndTimerId" class="flashAndTimer displayFlex ">
+                    <div class="flash displayFlex gap">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Flash Deal</h3>
+                    </div>
+                    <div class="timer displayFlex">
+                        <p>Ends In:</p>
+                        <p class="dayCount">5</p>
+                        <p>Days</p>
+                        <p class="hourCount">01</p>
+                        <p>:</p>
+                        <p class="mintueCount">34</p>
+                        <p>:</p>
+                        <p class="secondCount">36</p>
+                    </div>
+                </div>
+                <div class="mainPriceDiv displayFlex border">
+                    <div>
+                        <h5 class="fakeSlatColor">Price:</h5>
+                    </div>
+                    <div class=" currentAndStrickOff displayFlex gap">
+                        <h2 class="currentPrice">₹2593.77 </h2>
+                        <p class="fakeSlatColor">₹3222.76</p>
+                        <p class="orangeColor offPrice">20% OFF</p>
+                    </div>
+                </div>
+                <div id="dropDown">
+                    <div class=" coupenDiv displayFlex gap border">
+                        <p class="fakeSlatColor">Coupen:</p>
+                        <p class="offNewUser">2% OFF New User</p>
+                        <p class="colorBlue">Get Coupens</p>
+                    </div>
+
+                    <div id="hoverDiv" class="border">
+                        <h3 class="margintop ">New User Coupen</h3>
+                        <div class="maxSaveHover displayFlex border">
+                            <div class="hoverText border ">
+                                <p class="hoverUpperP margintop border">2% OFF,Max Save ₹628</p>
+                                <p class="valid7Day border">Valid within 7 days after received</p>
+                            </div>
+                            <div class="getNowBtnDiv  border">
+                                <button class="getNowBtn colorWhite border">Get Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dForShip" class="displayFlex border">
+                <p class="fakeSlatColor">Ship from:</p>
+                <div class="countryDiv">India</div>
+            </div>
+            <div id="dForQuantity" class="displayFlex border">
+                <p class="fakeSlatColor">QTY:</p>
+                <div class="displayFlex">
+                    <div class="itemReduce" onclick="itemReduce()">
+                        <p>-</p>
+                    </div>
+                    <div class="totalItem"><input class="typeTotalProduct" type="text"></div>
+                    <div class="itemIncrease" onclick="itemIncrease()">
+                        <p>+</p>
+                    </div>
+                </div>
+            </div>
+            <div id="dForShipping" class="displayFlex">
+                <p class="fakeSlatColor">Shipping:</p>
+                <p class="freeShip">Free Shipping</p>
+            </div>
+            <div id="dForBtn" class="displayFlex">
+                <div>
+                    <button class="buyNowBtn">
+                        <h2>Buy Now</h2>
+                    </button>
+                </div>
+                <div>
+                    <button class="addToCartBtn">
+                        <h2>Add To Cart</h2>
+                    </button>
+                </div>
+                <div>
+                    <button class="addToWishlist"><i class="fa-solid fa-heart"></i>
+                        <h4>Add to Wishlist</h4>
+                    </button>
+                </div>
+            </div>
+            <div id="dForPayment"></div>
+            <div id="dForMCSafe"></div>
+            <div id="dForPriceMatch"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+
+    //                                                           Timer Right Price Page
+
+    let gE = (sel) => {
+        return document.querySelector(sel)
+    }
+
+    let dayarr = [5];
+    let hrarr = [0];
+    let minarr = [23];
+    let secarr = [24];
+
+    let timer = () => {
+
+        let id = setInterval(() => {
+            secarr[0] -= 1;
+
+            // secarr[0]=secarr[0]-1;
+            // console.log(sec)
+
+            if (secarr[0] == 0) {
+                if (minarr[0] >= 1) {
+                    minarr[0] -= 1;
+                    secarr[0] = 59;
+                }
+
+            }
+
+            if (minarr[0] == 0) {
+                if (hrarr[0] >= 1) {
+                    hrarr[0] -= 1;
+                    minarr[0] = 59;
+                }
+
+
+            }
+            if (hrarr[0] == 0) {
+                if (dayarr[0] >= 1) {
+                    dayarr[0] -= 1;
+                    hrarr[0] = 23;
+                }
+
+            }
+
+            if (dayarr[0] == 0 && hrarr[0] == 0 && minarr[0] == 0 && secarr[0] == 0) {
+                clearInterval(id)
+            }
+
+            let day = dayarr[0];
+
+            let hr;
+            if (hrarr[0] < 10) {
+                hr = '0' + hrarr[0]
+            }
+            else {
+                hr = hrarr[0]
+            }
+
+            let min;
+            if (minarr[0] < 10) {
+                min = '0' + minarr[0]
+            }
+            else {
+                min = minarr[0]
+            }
+
+
+            let sec;
+            if (secarr[0] < 10) {
+                sec = '0' + secarr[0]
+            }
+            else {
+                sec = secarr[0]
+            }
+            // console.log(sec)
+
+            let days = gE('.dayCount')
+            days.innerHTML = day;
+
+            let hour = gE('.hourCount')
+            hour.innerHTML = hr;
+
+            let mintue = gE('.mintueCount')
+            mintue.innerHTML = min;
+
+            let second = gE('.secondCount')
+            second.innerHTML = sec;
+
+
+
+            // console.log('day:', day, 'hr:', hr, 'min:', min, 'sec:', sec)
+
+
+        }, 1000)
+
+
+    }
+
+    timer()
+
+
+
+
+    //                                                            Item  Increase Function
+
+
+    let totalItem = gE('.typeTotalProduct')
+    console.log(totalItem)
+    totalItem.value = 1;
+
+    let itemIncrease = () => {
+
+        let itemInBox = totalItem.value;
+        let updateItem = Number(itemInBox) + 1
+        totalItem.value = updateItem;
+
+    }
+
+    //                                                        Item Decrease Function
+
+    let itemReduce = () => {
+        console.log('a')
+        let itemInBox = totalItem.value;
+        let updateItem = Number(itemInBox) - 1
+        if (updateItem < 1) {
+            return;
+        }
+        totalItem.value = updateItem;
+    }
+
+
+
+
+    //                                              Small Img  Append in Container Function
+
+    let create = (tag) => {
+        return document.createElement(tag)
+    }
+
+
+    let arr = [
+
+        `https://img.gkbcdn.com/p/2022-03-10/SENBONO-MAX2-Smartwatch-for-Men-Black-Rubber-497705-0._w60_p1_.jpg`,
+        'https://img.gkbcdn.com/p/2022-03-10/SENBONO-MAX2-Smartwatch-for-Men-Black-Rubber-497705-1._w60_p1_.jpg',
+        'https://img.gkbcdn.com/p/2022-03-10/SENBONO-MAX2-Smartwatch-for-Men-Black-Rubber-497705-2._w60_p1_.jpg',
+        'https://img.gkbcdn.com/p/2022-03-10/SENBONO-MAX2-Smartwatch-for-Men-Black-Rubber-497705-3._w60_p1_.jpg',
+        'https://img.gkbcdn.com/p/2022-03-10/SENBONO-MAX2-Smartwatch-for-Men-Black-Rubber-497705-4._w60_p1_.jpg',
+        'https://img.gkbcdn.com/p/2022-03-10/SENBONO-MAX2-Smartwatch-for-Men-Black-Rubber-497705-5._w60_p1_.jpg',
+
+    ]
+
+    // arr.map((e)=>{
+    //     // console.log(e)
+    //     let movePicContainer=gE('.movePicContainer')
+    //     movePicContainer.innerHTML=null;
+    //     for(var key in e){
+    //         // console.log(e[keys])
+    //         let smallImgDiv=create('div')
+
+    //         movePicContainer.append(smallImgDiv)
+
+    //         let img=create('img');
+    //         img.src=e[key]
+    //         img.setAttribute('class','smallProductImg')
+
+    //         smallImgDiv.append(img)
+
+
+    //     }
+    // })
+
+
+
+    //                                                    Forward Image Move Recoration
+
+    let lef = 0;
+    let rig = 4;
+
+    let forwardMove = (lef, rig) => {
+
+        console.log(lef, rig)
+    
+
+
+        setTimeout(() => {
+
+            let movePicContainer = gE('.movePicContainer')
+            movePicContainer.innerHTML = '';
+
+            for (let x = lef; x <= rig; x++) {
+
+
+
+                console.log(x)
+                let smallImgDiv = create('div')
+
+                movePicContainer.append(smallImgDiv)
+
+                let img = create('img');
+                img.src = arr[x]
+                img.setAttribute('class', 'smallProductImg')
+                img.addEventListener('click',function(){
+                    let productImg=gE('#productImg')
+                    productImg.src=arr[x];
+                })
+
+                smallImgDiv.append(img)
+
+            }
+
+            console.log('lefupper', lef, rig)
+
+            lef++;
+            rig++;
+            console.log('leflower', lef, rig)
+
+            if (rig == arr.length) {
+                lef=0;
+                rig=4;
+            }
+
+            if (rig < arr.length) {
+                forwardMove(lef, rig)
+            }
+
+          
+
+        }, 3000)
+
+
+
+
+
+
+    }
+
+
+    forwardMove(lef, rig)
+
+
+
+
+
+
+</script>
