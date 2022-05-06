@@ -1,0 +1,158 @@
+#container{
+  width: 80%;
+  margin:  20px auto;
+}
+.top{
+  width: 100%;
+  height: 100px;
+}
+img{
+  width: 100%;
+}
+.bottom{
+  display: flex;
+}
+.card1{
+  /* border: 1px solid gray; */
+  width: 20%;
+  height: 600px;
+  margin: 50px 0 0 0;
+  padding: 10px;
+}
+.card1>p{
+  margin-left: 10px;
+}
+.card2{
+  /* border: 1px solid gray; */
+  width: 78%;
+  margin: 50px 0 0 20px;
+}
+.box1{
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid gray; */
+}
+.box1>img{
+  height: 100%;
+}
+.box2{
+ width: 100%;
+ height: 100px;
+}
+.box2>div{
+ width: 90%;
+ height: 35px;
+ margin: 10px;
+ /* border: 1px solid white; */
+}
+.brand{
+ display: flex;
+}
+.brand>div{
+ width: 100px;
+ height: 35px;
+ /* border: 1px solid lightgray; */
+ margin-left: 10px;
+}
+.brand>div>img{
+ width: 100%;
+ height: 100%;
+}
+.filter{
+ display: flex;
+
+}
+.filter>div{
+ /* border: 1px solid white; */
+ margin-left: 20px;
+ text-align: center;
+ padding: 0 10px 0 10px;
+ width: 100px;
+}
+.filter>div:nth-child(2){
+ width: 200px;
+}
+.sortby{
+ display: flex;
+
+}
+.sortby>div{
+ /* border: 1px solid white; */
+ margin-left: 20px;
+ text-align: center;
+ padding: 0 10px 0 10px;
+ width: 100px;
+}
+.sortby>div:nth-child(2){
+ width: 200px;
+}
+.box3{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+margin: 40px 0 0 0;
+padding: 20px;
+/* border-top: 1px solid gray; */
+}
+
+#flex_div{
+  display:flex;
+  width:100%;
+  gap:2px;
+  /* border: 1px solid purple; */
+
+}
+#flex {
+display: flex;
+margin: 0px;
+/* border: 1px solid white; */
+}
+#flex>h2{
+margin: 0px;
+}
+#flex2{
+display: flex;  
+margin: 0px;
+/* border: 1px solid white;  */
+}
+#flex2>p{
+margin-top: 0px;
+}
+#divhover:hover{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 20px;
+
+}
+#wishlistbtn{
+border: 0px;
+/* background-color: white;  */
+margin: 10px 0 0 0 ;
+}
+#divwish{
+  display: flex;;
+}
+
+#footpart{
+  height:250px;
+  width:100%;
+  border: 1px solid black;
+  
+}  
+#footpart img{
+  height: 200px;
+ width:300px;
+} 
+
+div#footpart {
+background-color:white;
+overflow: auto;
+white-space: nowrap;
+}
+
+div#footpart img{
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px;
+text-decoration: none;
+}
