@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="/Geekbuying-clone/Styles/new.css">
+      <title>New Arrivals</title>
+   </head>
+   <body>
+      <div id="first">
+         <h2>New Arrivals</h2>
+     </div>
+      <div id="filter">
+      <nav id="filter1" class="sidebar">
+         <!-- <div class="text">
+            Side Menu
+         </div> -->
+         <a href="#">All Categories</a>
+         <ul>
+           
+            <li>
+               <a href="#" class="feat-btn">Smart Home & Garden
+               <span class="fa fa-angle-down first"></span>
+               </a>
+               <ul class="feat-show">
+                  <li><a href="#">  Robot Vacuum Cleaners</a></li>
+                  <li><a href="#">Cordless Vacuum Cleaners</a></li>
+                  <li><a href="#">Ceiling Lights</a></li>
+                  <li><a href="#">Hair Care & Salon</a></li>
+                  <li><a href="#">Clocks</a></li>
+                  <li><a href="#">Wall Art</a></li>
+                  <li><a href="#">Kitchen Appliances</a></li>
+                  <li><a href="#">Personal Care</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#" class="serv-btn">Consumer Electronics
+               <span class="fas fa-angle-down second"></span>
+               </a>
+               <ul class="serv-show">
+                  <li><a href="#">Earbud Headphones</a></li>
+                  <li><a href="#">FDM 3D Printers</a></li>
+                  <li><a href="#">Laser Engravers & Cutters</a></li>
+                  <li><a href="#">3D Printer Accessories</a></li>
+                  <li><a href="#">Projectors</a></li>
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Measurement & Analysis</a></li>
+                  <li><a href="#">Handheld Game Consoles</a></li>
+               </ul>
+            </li>
+            <li><a href="#" class="new-btn">Sports & Outdoors
+               <span class="fas fa-angle-down third"></span>
+            </a>
+               <ul class="new-show">
+                  <li><a href="#">Outdoor Generators & Portable</a></li>
+                  <li><a href="#">Water Sports</a></li>
+                  <li><a href="#">Tent & Hammock</a></li>
+                  <li><a href="#">Sports & Action Cameras</a></li>
+                  <li><a href="#">Other Outdoor Gear</a></li>
+                  <li><a href="#">Bikes</a></li>
+                  <li><a href="#">Travel Supplies</a></li>
+                  <li><a href="#">Other Accessories</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Computers, Tablets & Acc ..
+               <span class="fas fa-angle-down first"></span>
+            </a></li>
+            <li><a href="#">Wearable Devices
+               <span class="fas fa-angle-down first"></span>
+            </a></li>
+            <li><a href="#">Toys & Hobbies
+               <span class="fas fa-angle-down first"></span>
+            </a></li>
+            <li><a href="">Security Systems
+               <span class="fas fa-angle-down first"></span>
+            </a></li>
+            <li><a href="">Phones & Accessories
+               <span class="fas fa-angle-down first"></span>
+            </a></li>
+            <li><a href="">Fashion
+               <span class="fas fa-angle-down first"></span>
+            </a></li>
+            <li><a href="">Automobiles & Motorcycles
+               <span class="fas fa-angle-down first"></span> </a></li>
+           
+         </ul>
+      </nav>
+      <div id="filter2">
+         <div id="filter11">
+           <div id="day">
+            <p class="p1">New Arrived :
+            </p>
+            <div><p class="p2">7 days </p></div>
+            <div><p class="p2">15 days </p></div>
+            <div><p class="p2">30 Days</p></div>  
+           </div>
+            <div id="opt">
+               <p class="p1">Filter :</p>
+              <div class="sale"><p><span><i style="font-size: 1.5rem;" class="fa-light fa-stop"></i></span> On Sale</p></div>
+              <div class="sale1"><p><span><i style="font-size: 1.5rem;" class="fa-light fa-stop"></i></span>Free Shipping only </p></div>
+              <p id="dash">Price :</p>
+              <form>
+                 <input  type="number" placeholder="Min">
+                 <p style="margin-top: .3rem; margin-right: .4rem;">-</p>
+                 <input type="number" placeholder="Max">
+                 <!-- <input type="submit" placeholder="OK" id="submit"> -->
+              </form>
+
+            </div>    
+            <div id="sort">
+               <p class="p1">Sort By : </p>
+               <div>
+               <button onclick="sort1()"><a href="new.html" style="text-decoration: none;">Best Match</a></button>
+               <button onclick="sort2()"><a href="new.html" style="text-decoration: none;" >New Arrival</a></button>
+               <button onclick="sort3()">Price</button>
+            </div>
+            </div>    
+         </div>
+         
+         <div id="filter22">
+            
+         </div>
+      </div>
+   </div>
+   <div id="mulopt">
+     <input type="text" placeholder="<">
+     <input style="background-color: blue; border: none;" type="text" placeholder="1">
+     <input type="text" placeholder="2">
+     <input type="text" placeholder="3">
+     <input type="text" placeholder="...">
+     <input type="text" placeholder="21">
+     <input type="text" placeholder=">">
+
+   </div>
+   <h3 class="h33">Recommendation For You</h3>
+    <div class="slideshow-container" id="slideshow-container">
+      
+    </div>
+    <div id="arrow"><a class="prev" id="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" id="next" onclick="plusSlides(1)">❯</a></div>
+
+      <div id="slider53">
+         <!-- <button class="btn">Ship From</button> -->
+            <div class="dropdown">
+            <button class="btn" > Ship From
+            <i id="fa" class="fa fa-caret-down"></i>
+             </button>
+             <div class="dropdown-content">
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2103/20210311151004363.jpg" alt=""> Netherland</a>
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2003/20200305162126197.jpg" alt=""> Europe</a>
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2008/20200807180128517.jpg" alt=""> Poland</a>
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2007/20200717102719551.jpg" alt=""> Germany</a>
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2110/20211021113310180.jpg" alt=""> spain</a>
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/i/1910/20191018175843539.jpg" alt=""> United State</a>
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2007/20200708114532816.jpg" alt=""> United kingdom</a>
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/i/1811/20181110111603672.jpg" alt=""> China</a>
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/i/1811/20181110111507664.jpg" alt=""> Hong Kong</a>
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2202/20220215165710405.jpg" alt=""> Canada</a>
+            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/i/1910/20191018175420531.jpg" alt=""> Japan</a>
+            </div>
+      </div>
+   </body>
+</html>
+<script src="/Geekbuying-clone/Scripts/new.js"></script>
