@@ -4,11 +4,651 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+ 
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      #flashAndTimerId{
+        width: 80%;
+        height: 400px;
+        border: 1px solid red;
+        margin: auto;
+        display: flex;
+      }
+      .flash{
+        display: flex;
+        gap: 20px;
+        margin-left: 300px;
+      }
+      .red{
+        font-size: 50px;
+        margin-top: 10px;
+        color: red;
+       
+      }
+      .timer{
+        display: flex;
+        margin-left: 50px;
+        margin-top: 23px;
+        gap: 20px;
+      }
+    
+    </style>
+
 </head>
 <body>
-    <div>
-        <h1>WELCOME TO HOMEPAGE</h1>
+    <!-- <hr> -->
+
+    <div id="navbar">
+
     </div>
+   
+    <div class="Carouselcontainer">
+     
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-627102d02b40c930d0c34570.jpg">
+                  </div>
+            
+                  <div class="item">
+                    <img src="https://img.gkbcdn.com/s3/bn/2204/1090x422-626a65222b40c9340c43a37a.jpg" alt="" style="width:100%;">
+                  </div>
+                
+                  <div class="item">
+                    <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-627095d62b40c92fe444d3aa.jpg" alt="" style="width:100%;">
+                  </div>
+                  <div class="item">
+                    <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-627097f82b40c92fe444d3ac.jpg" alt="" style="width:100%;">
+                  </div>
+
+                  <div class="item ">
+                    <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-6274f0ca2b40c938fc33ef3d.jpg">
+                  </div>
+
+               
+          </div>
+      
+          
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          
+          </div>
+
+          <div id="color">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+
+
+
+          <div id="img_container">
+              <div>
+                  <p class="head">SENBONO Max2 Smartwatch</p>
+                  <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2205/497705-626f45ba2b40c9339c112e8e.jpg" alt="">
+
+              </div>
+              <div>
+                  <p class="head">Xiaomi ROIDMI EVE Plus</p>
+                  <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2205/449701-626f45ea2b40c9339c112e8f.jpg" alt="">
+              </div>
+              <div>
+                  <p class="head">SYL-14 Off-Road Electric Skateboard </p>
+                  <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2205/463887-626f45612b40c9339c112e8d.jpg" alt="">
+              </div>
+              <div>
+                  <p class="head">GArden Supplies</p>
+                  <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2205/499068-626f46232b40c9339c112e90.jpg" alt="">
+              </div>
+            </div>
+
+            <!-- <div id="timmer">
+              <div class="red1">
+                <i class="fa-solid fa-bolt red"></i>
+                <h2>Flash Deals </h2>
+              </div>
+
+              <div id="left">
+                <p>Ends In:</p>
+                <p class="dayCount">5</p>
+                <p>:</p>
+                <p class="hourCount">01</p>
+                <p>:</p>
+                <p class="mintueCount">34</p>
+                <p>:</p>
+                <p class="secondCount">36</p>
+            </div>
+              
+            </div> -->
+
+
+            <!-- <div id="flashAndTimerId" class="flashAndTimer displayFlex ">
+              <div class="flash displayFlex gap">
+                  <i class="fa-solid fa-bolt red"></i>
+                  <h3>Flash Deal</h3>
+              </div>
+              <div class="timer displayFlex">
+                  <p>Ends In:</p>
+                  <p class="dayCount">5</p>
+                  <p>Days:</p>
+                  <p class="hourCount">01</p>
+                  <p>:</p>
+                  <p class="mintueCount">10</p>
+                  <p>:</p>
+                  <p class="secondCount">36</p>
+              </div>
+          </div> -->
+
+
+
+
+
+
+            
+
+            <div id="img_container">
+              <div>
+                  <img class="watch_img" src="https://img.gkbcdn.com/p/2021-03-30/xiaomi-mi-band-6-smart-bracelet-1-56-inch-screen-black-1617074128547._w280_p1_.jpg" alt="">
+                  <p class="or">| | <span class="p1">3537.25</span></p>
+                  <p class="offer"><s>= 5188.33</s></p>
+                  <button class="off">32% OFF</button>
+                 
+              </div>
+              <div>
+                  <img class="watch_img" src="https://img.gkbcdn.com/p/2021-07-20/e8d982f4f76e4c109aff2227fedaaa18-461408-1._w280_p1_.jpg" alt="">
+                  <p class="or">| | <span class="p1">3537.25</span></p>
+                  <p class="offer"><s>= 5188.33</s></p>
+                  <button class="off">32% OFF</button>
+              </div>
+              <div>
+                  <img class="watch_img" src="https://img.gkbcdn.com/p/2017-07-26/xiaomi-wifi-amplifier-pro-black-1574132393616._w280_p1_.jpg" alt="">
+                  <p class="or">| | <span class="p1">3537.25</span></p>
+                  <p class="offer"><s>= 5188.33</s></p>
+                  <button class="off" >32% OFF</button>
+              </div>
+              <div>
+                  <img class="watch_img" src="https://img.gkbcdn.com/p/2021-11-29/razer-deathadder-essential-optical-gaming-mouse-black-aa9d23-1638169302886._w280_p1_.jpg" alt="">
+                  <p class="or">| | <span class="p1">3537.25</span></p>
+                  <p class="offer"><s>= 5188.33</s></p>
+                  <button class="off">32% OFF</button>
+              </div>
+
+
+              <div>
+                  <p class="head">3D Printer and Laser Engravers</p>
+                  <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2204/laser-6260f66a2b40c93724be1ee9.jpg" alt="">
+                  <p class="para">Your at-home 3D laser printer that makes magical things at the push of a button.</p>
+              </div>
+              <div>
+                  <p class="head">Gamesir Brand Sale</p>
+                  <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2204/Gamesir-6260f6532b40c93724be1ee8.jpg" alt="">
+                  <p class="para">Exploring a comprehensive gaming experience as always through Gamesir</p>
+              </div>
+              <div>
+                  <p class="head">E-Bikes</p>
+                  <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2203/481198-623d205c2b40c91d90971af4.jpg" alt="">
+                  <p class="para">Road, mountain, gravel, commuter, they've all got electric versions.</p>
+              </div>
+              <div>
+                  <p class="head">Xmimng 1080 Projector</p>
+                  <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2204/497217-624fa3172b40c931484ec7f2.jpg" alt="">
+                  <p class="para">1080P resolution, 250 lumens, it projects high-resolution images, more outstanding details.</p>
+              </div>
+              
+
+
+          </div>
+
+          <div id="new_arrival">
+           
+            <h4>New Arrval <span style="color: rgb(107, 107, 172);">See more</span></h4>
+          </div>
+          <div id="arrival">
+              <div>
+                  <img class="watch_img"  src="https://img.gkbcdn.com/p/2022-04-28/Zeblaze-Stratos-2-Smartwatch-1-3---AMOLED-Display-Blue-500033-0._w280_p1_.jpg" alt="">
+                  <p class="para">Zeblaze Stratos 2 Smartwatch 1.3'' AMOLED Display 24</p>
+                  <p class="or">| | <span class="p1">6524.92</span></p>
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2022-04-18/KUMI-KU5-Smartwatch-1-22---TFT-Screen-Black-499724-0._w280_p1_.jpg" alt="">
+                <p class="para">KUMI KU5 Smartwatch 1.22'' TFT Screen Real-time Health</p>
+                <p class="or">| | <span class="p1">4480.72</span></p>
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2022-04-25/A-pair-of-LED-Luminous-Chopsticks-499968-0._w280_p1_.jpg" alt="">
+                <p class="para">A pair of LED Luminous Chopsticks Creative Tableware</p>
+                <p class="or">| | <span class="p1">470.95</span></p>
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2022-04-21/ALLDOCUBE-iWork-GT-2-in-1-Tablet-Windows-11-i5-1135G7-CPU-499845-0._w280_p1_.jpg" alt="">
+                <p class="para">ALLDOCUBE iWork GT 2 in 1 Tablet Windows 11 i5-1135G7</p>
+                <p class="or">| | <span class="p1">69187.45</span></p>
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2022-04-13/Magene-HRM60-Heart-Rate-Monitor-499514-0._w280_p1_.jpg" alt="">
+                <p class="para">Magene HRM60 Heart Rate Monitor IML Colorful Shell</p>
+                <p class="or">| | <span class="p1">3144.13</span></p>
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2022-04-29/LED-Camping-Light-1-8m-Adjustable-with-Tripod-6500-7000K-Brightness-500061-0._w280_p1_.jpg" alt="">
+                <p class="para">LED Camping Light 1.8m Adjustable with Tripod 6500-</p>
+                <p class="or">| | <span class="p1">2122.03</span></p>
+              </div>
+             
+
+          </div>
+
+
+
+
+          <div id="new_arrival">
+           
+            <h4>Best seller <span style="color: rgb(107, 107, 172);">See more</span></h4>
+          </div>
+          <div id="arrival">
+              <div>
+                  <img class="watch_img"  src="https://img.gkbcdn.com/p/2019-03-22/tronsmart-glary-virtual-7-1-gaming-headset-1571985014193._w280_p1_.jpg" alt="">
+                  <p class="para">Zeblaze Stratos 2 Smartwatch 1.3'' AMOLED Display 24</p>
+                  <p class="or">| | <span class="p1">6524.92</span></p>
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2019-10-11/jjrc-x12-4k-gps-rc-drone-white-two-batteries-with-bag-1574132236117._w280_p1_.jpg" alt="">
+                <p class="para">KUMI KU5 Smartwatch 1.22'' TFT Screen Real-time Health</p>
+                <p class="or">| | <span class="p1">4480.72</span></p>
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2021-12-09/A9-1080P-Mini-Wireless-WIFI-IP-Camera-480325-0._w280_p1_.jpg" alt="">
+                <p class="para">A pair of LED Luminous Chopsticks Creative Tableware</p>
+                <p class="or">| | <span class="p1">470.95</span></p>
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2021-11-29/razer-deathadder-essential-optical-gaming-mouse-black-aa9d23-1638169302886._w280_p1_.jpg" alt="">
+                <p class="para">ALLDOCUBE iWork GT 2 in 1 Tablet Windows 11 i5-1135G7</p>
+                <p class="or">| | <span class="p1">69187.45</span></p>
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2019-10-28/enchen-blackstone-3d-smart-electric-shaver-black-1574132742777._w280_p1_.jpg" alt="">
+                <p class="para">Magene HRM60 Heart Rate Monitor IML Colorful Shell</p>
+                <p class="or">| | <span class="p1">3144.13</span></p>
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2020-04-10/Xiaomi-Mijia-Bebird-M9-Pro-Smart-Visual-Ear-Picker-Black-901641-._w280_p1_.jpg" alt="">
+                <p class="para">LED Camping Light 1.8m Adjustable with Tripod 6500-</p>
+                <p class="or">| | <span class="p1">2122.03</span></p>
+              </div>
+             
+
+          </div>
+
+          <div id="new_arrival">
+           
+            <h4>Popular Barand <span style="color: rgb(107, 107, 172);">See more</span></h4>
+          </div>
+
+          <div id="tronsmart">
+              <div class="inner_trans">
+                  <div>
+                      <img src="https://img.gkbcdn.com/s3/b/Logo/tronsmart.jpg?v=788944783" alt="">
+                  </div>
+                  <div class="grid">
+                    <div>
+                        <img src="https://img.gkbcdn.com/p/2020-01-09/Tronsmart-element-T6-plus-Upgrade-Black-895558-._w280_p1_.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://img.gkbcdn.com/p/2019-01-31/tronsmart-element-mega-bluetooth-speaker-black-1571991416189._w280_p1_.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://img.gkbcdn.com/p/2019-10-24/tronsmart-element-t6-max-60w-bluetooth-5-0-nfc-speaker-black-1574132858241._w280_p1_.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://img.gkbcdn.com/p/2019-03-18/tronsmart-element-t6-plus-bluetooth-speaker-black-1574132202231._w280_p1_.jpg" alt="">
+                    </div>
+                  </div>
+                 
+              </div>
+
+              <div class="inner_trans">
+                  <div>
+                      <img src="https://img.gkbcdn.com/s3/b/Logo/jimmy.jpg?v=-219567574" alt="">
+
+                  </div>
+
+                  <div class="grid">
+                    <div>
+                        <img src="https://img.gkbcdn.com/p/2020-01-07/JIMMY-F6-1800W-Electric-Hair-Dryer-Ruby-Red-882508-._w280_p1_.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://img.gkbcdn.com/p/2020-01-07/JIMMY-F6-1800W-Electric-Hair-Dryer-Ruby-Red-882508-._w280_p1_.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://img.gkbcdn.com/p/2019-05-07/xiaomi-jimmy-jv83-wireless-vacuum-cleaner-blue-1571994426496._w280_p1_.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://img.gkbcdn.com/p/2021-03-09/JIMMY-H8-Cordless-Handheld-Flexible-Vacuum-Cleaner-Blue-455909-0._w280_p1_.jpg" alt="">
+                    </div>
+                  </div>
+                  
+
+                
+              </div>
+             
+
+          </div>
+
+
+          <div id="tronsmart">
+            <div class="inner_trans">
+                <div>
+                    <img src="https://img.gkbcdn.com/s3/b/Logo/roborock.jpg" alt="">
+                </div>
+                <div class="grid">
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2022-04-29/roborock-s7-robot-vacuum-cleaner-2500pa-powerful-suction-feadc9-1651214912229._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2020-03-28/Roborock-Smart-Robotic-Vacuum-Cleaner-Rolling-Brush-899581-._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2020-03-28/Roborock-Smart-Robotic-Vacuum-Cleaner-Rolling-Brush-899581-._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2021-05-27/Roborock-S7-Robotic-Vacuum-Cleaner-Mop-Cloth-459860-0._w280_p1_.jpg" alt="">
+                  </div>
+                </div>
+               
+            </div>
+
+            <div class="inner_trans">
+                <div>
+                    <img src="https://img.gkbcdn.com/s3/b/eleglide.jpg" alt="">
+
+                </div>
+
+                <div class="grid">
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2022-04-24/eleglide-m1-plus-upgraded-version-electric-bike-12-5ah-250w-black-258649-1650765309927._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2022-04-24/eleglide-m1-upgraded-version-electric-bike-7-5ah-250w-motor-dark-blue-b23cd2-1650765670228._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2021-09-10/eleglide-s1-plus-folding-electric-scooter-10--pneumatic-tires-black-1631275759377._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2021-09-14/eleglide-d1-master-off-road-folding-electric-scooter-10--tires-black-1631613267943._w280_p1_.jpg" alt="">
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="tronsmart">
+            <div class="inner_trans">
+                <div>
+                    <img src="https://img.gkbcdn.com/s3/b/sculpfun-6AlQjHhs.jpg" alt="">
+                </div>
+                <div class="grid">
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2021-12-22/SCULPFUN-S9-Laser-Engraver-481991-0._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2021-12-17/Sculpfun-Honeycomb-Panel-200x300mm-481734-0._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2021-12-17/Sculpfun-S6-Pro-Laser-Engraver-481732-0._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2021-05-27/Roborock-S7-Robotic-Vacuum-Cleaner-Mop-Cloth-459860-0._w280_p1_.jpg" alt="">
+                  </div>
+                </div>
+               
+            </div>
+
+            <div class="inner_trans">
+                <div>
+                    <img src="https://img.gkbcdn.com/s3/b/eleglide.jpg" alt="">
+
+                </div>
+
+                <div class="grid">
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2022-04-24/eleglide-m1-plus-upgraded-version-electric-bike-12-5ah-250w-black-258649-1650765309927._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2022-04-24/eleglide-m1-upgraded-version-electric-bike-7-5ah-250w-motor-dark-blue-b23cd2-1650765670228._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2021-09-10/eleglide-s1-plus-folding-electric-scooter-10--pneumatic-tires-black-1631275759377._w280_p1_.jpg" alt="">
+                  </div>
+                  <div>
+                      <img src="https://img.gkbcdn.com/p/2021-09-14/eleglide-d1-master-off-road-folding-electric-scooter-10--tires-black-1631613267943._w280_p1_.jpg" alt="">
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="new_arrival1">
+           
+            <h4>Tranding categories </h4>
+          </div>
+          <div id="arrival1">
+              <div>
+                  <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2109/robotvacuums60d29088e21ad3c62c1974d5-6135e4de2b40c928c4cffc23.jpg" alt="">
+                  <p class="para1">Robot Vaccume</p>
+                
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2109/02020225144159Outdoor-6135e4ed2b40c92078307531.jpg" alt="">
+                <p class="para1">Electric Scooter</p>
+                
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2112/3d-61b0157f2b40c9211cc0ca18.jpg" alt="">
+                <p class="para1">3D Printers</p>
+          
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2109/electronics-6135e6ac2b40c916ac3b2823.jpg">
+                <p class="para1">Electronic</p>
+                
+              </div>
+             
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2109/02020516164612h6-6135e5222b40c92078307532.jpg" alt="">
+                <p class="para1">Cordless vaccume</p>
+                
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2112/laptop-61b015fa2b40c9211cc0ca19.jpg" alt="">
+                <p class="para1">Laptops & tablets</p>
+                
+              </div>
+             
+
+          </div>
+
+
+        <!-- recommeneded for you -->
+        <div id="new_arrival1">
+           
+            <h4>Recommendations for you</h4>
+          </div>
+          <div id="Recommendations">
+              <div>
+                  <img class="watch_img"  src="https://img.gkbcdn.com/p/2019-07-05/tronsmart-element-force-portable-bluetooth-speaker-1571994482583._w280_.jpg" alt="">
+                  
+                
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2019-03-18/tronsmart-element-t6-plus-bluetooth-speaker-black-1571991425316._w280_.jpg" alt="">
+             
+                
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2019-03-16/tronsmart-force-mega-t6-t6-plus-speaker-carry-case-1571991604256._w280_.jpg" alt="">
+                
+          
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2019-12-31/tronsmart-t2-plus-20w--bluetooth-5-0-speaker-tws-1577761931811._w280_.jpg">
+                
+                
+              </div>
+             
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2019-10-24/tronsmart-element-t6-max-60w-bluetooth-5-0-nfc-speaker-black-1574132858241._w280_.jpg" alt="">
+             
+                
+              </div>
+              <div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/p/2019-06-11/syl-06-electric-skateboard-black-1571991633506._w280_.jpg" alt="">
+                
+                
+              </div>
+              <!-- <div>
+                  <img src="https://img.gkbcdn.com/p/2022-03-30/GTS-01-Dual-Motor-Electric-Skateboard-20km-Max-Range-498533-0._w280_.jpg" alt="">
+              </div>
+            -->
+             
+
+          </div>
+
+
+<!-- ----------------------------footer----------------------------->
+<div id="footer">
+    <div id="marginleft">
+        <input id="scribe" type="text" placeholder="Enter email to get 5% off coupon ">
+        <!-- <input type="Suscribe"> -->
+         <button id="scribe_btn">Suscribe</button>
+         <div id="geek_buying">
+            <h4>About Geekbuying</h4>
+            <p id="text">We at Geekbuying are all about making our customers' lives comfortable and smarter. We have a massive selection of products and offer unbeatable prices. If you are looking for the latest and the greatest product in categories like smart home and outdoor gadgets, Geekbuying is where you should be!
+
+                Geekbuying is the ultimate shopping hub for new releases covering smart home products like vacuum cleaners, fitness equipment like treadmills, top of the line home and office furniture, outdoor items including e-bikes, scooters, and other consumer goods like TV boxes, RC Toys and so much more! Shop for your favorite brands and products today!</p>
+         </div>
+
+    </div>
+
+    <div>
+
+        <div id="social">
+            <div class="social_gap"> 
+                 <div>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-rocketchat"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter-square"></i>
+                    <i class="fa-brands fa-blogger-b"></i>
+                 </div>
+              
+            </div>
+
+
+            <div class="social_gap">
+                <i class="fa-regular fa-mobile"></i>
+                <!-- <p>Mobile</p> -->
+                <i class="fa-brands fa-android"></i>
+                <!-- <p>Android</p> -->
+                <i class="fa-brands fa-apple"></i>
+                <!-- <p>iOS</p> -->
+
+                
+            </div>
+            
+        </div>
+
+
+     <div id="help">
+         <div>
+            <h4>Help </h4>
+            <p>Order status</p>
+            <p>About us</p>
+            <p>Contact us</p>
+            <p>Warranty</p>
+            <p>FAQs</p>
+            <p>Sitemap</p>
+         </div>
+         <div>
+             <h4>Support</h4>
+             <p>Payment information</p>
+             <p>Shipping guide</p>
+             <p>Wholesale</p>
+             <p>Affiliates</p>
+         </div>
+         <div>
+             <h4>Policies</h4>
+             <p>Terms & conditions</p>
+             <p>Return policy</p>
+             <p>Privacy</p>
+             <p>Declaration</p>
+             <p>Customs</p>
+         </div>
+     </div>
+
+    </div>
+    
+</div>
+<h4 id="peo">Popular Searches</h4>
+<div id="peopler_search">
+  <button>Geekbuying Coupon</button>
+  <button>Roborock Q7 Max</button>
+  <button>Tronsmart Bluetooth Speakers</button>
+  <button>Windows Mini PC</button>
+  <button>android tv boxes</button>
+  <button> LDS Robot Vacuum</button>
+  <button>Electric Bike</button>
+  <button>OnexPlayer mini AMD</button>
+
+    
+</div>
+
+<div id="lang">
+    <p>| English | Español | Français | Deutsch | Italiano | Português | Nederlands | Polski | Русский | Türkçe | ελληνικά | Magyar | لعربي | עברית | ไทย  日本語 |</p>
+</div>
+<hr>
+
+<div id="pay"><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/footicons.jpg?v=20220427" 
+    alt=""></div>
+
+
+    <div  id="printdata"></div>
+
+
+
+
+
+        
+
+    
 </body>
 </html>
+<script src="./scripts/index.js" type="module"></script>
