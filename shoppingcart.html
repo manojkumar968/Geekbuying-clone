@@ -46,7 +46,7 @@
                 <p>You choose <span id="total-items">0</span> item(s)</p>
                 <p>Total: <span id="currency">₹</span ><span id="total-price">0.00</span></p>
                 <button><img src="https://content1.geekbuying.com/V1.4/en/images/cartImg/new_pp.png" alt=""> </button>
-                <button>Proceed to checkout</button>
+                <button onclick = "ptoc()">Proceed to checkout</button>
             </div>
         </div>
     </div>
@@ -57,7 +57,17 @@
         </div>
         <hr>
         <div id="bottom2">
-
+            <div id="">
+                <div id="midSlid">
+                    <Div id="backward">
+                        <div class="circle" onclick="backward()"><i class="fa-solid fa-chevron-left"></i></i></div>
+                    </Div>
+                    <div id="midRigDiv" class="productDetailMainBox"></div>
+                    <Div id="forward">
+                        <div class="circle" onclick="forward()"><i class="fa-solid fa-chevron-right"></i></i></div>
+                    </Div>
+                </div>
+            </div>
         </div>
         <div id="bottom3">
             <img src="./Images/companies footer.PNG" alt="">
