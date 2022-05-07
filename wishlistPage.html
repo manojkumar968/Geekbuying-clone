@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+
+        #midMainDiv{
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            margin: auto;
+            /* border: 1px solid brown; */
+            /* justify-content: center; */
+            margin-top: 40px;
+            padding: 40px;
+        }
+        #midLefDiv{
+            width: 20%;
+            height: auto;
+            /* border: 2px solid blue; */
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+         .productDetailMainBox {
+                width: 75%;
+                padding-left: 15px;
+                height: auto;
+                /* border: 2px solid blue; */
+                
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: auto;
+                margin-top: 10px;
+
+            }
+
+            .div_image_productdetail {
+                padding: 10px;
+                height: auto;
+                /* wi */
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /* padding-bottom: 20px; */
+                background-color: white;
+                /* margin-left: 10px; */
+                padding-bottom: 30px;
+            }
+
+            body {
+                background-color: #f5f5f5;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .productImgHoverSale {
+                width: 250px;
+                height: 245px;
+                /* border: 2px solid red; */
+            }
+
+            .imgHoverSale {
+                width: 250px;
+                height: 270px;
+                /* border-radius: 2px solid red; */
+            }
+
+            .productImg {
+                /* border: 2px solid green; */
+                width: 250px;
+                height: 245px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .hoverSaleDiv {
+                /* border: 2px solid grey; */
+                width: 250px;
+                height: 270px;
+                display: flex;
+                position: relative;
+                z-index: 2;
+                margin-top: -280px;
+            }
+
+
+            .hide {
+                display: none;
+                width: 30px;
+                height: 30px;
+                background-color: #dd0285;
+                border-radius: 2px;
+
+            }
+
+
+            .fa-eye {
+                color: aliceblue;
+            }
+
+            .hoverSaleDiv:hover>.parntOfHover>.hide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .area {
+                width: 50%;
+                height: 100%;
+                /* border: 1px solid red; */
+            }
+
+            .parntOfHover {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+
+            .parntOfSale {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            #saleDiv {
+                width: 40px;
+                height: 40px;
+                background-color: #dd0285;
+                color: white;
+                display: flex;
+                margin: 40px 20px;
+                align-items: center;
+                /* padding-top: 10px; */
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                border-radius: 50%;
+
+            }
+
+            .underlineRemove,.editProfileText {
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .productDetail {
+                width: 250px;
+                height: 110px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                text-align: center;
+
+            }
+
+            .productName {
+                font-size: 12px;
+
+
+            }
+
+            .fa {
+                color: #eca330;
+            }
+
+            .starRating {
+                font-size: 10px;
+                margin-top: -5px;
+            }
+
+            .price {
+                display: flex;
+                justify-content: space-evenly;
+                width: 60%;
+                align-items: center;
+                margin: auto;
+                /* margin-top: -.5px; */
+            }
+
+            .offprice {
+                font-size: 10px;
+                /* font-weight:0 */
+            }
+
+            .currentprice {
+                font-size: 15px;
+                color: #dd0285;
+                font-weight: bold;
+            }
+
+            .discount {
+                font-size: 12px;
+                color: #008021;
+                font-weight: bold;
+            }
+
+            .addToCartOrFev {
+                display: none;
+            }
+
+            .div_image_productdetail:hover .addToCartOrFev{
+                display: block;
+                display: flex;
+                width: 60%;
+                margin: auto;
+                justify-content: space-between;
+                margin-bottom: -2px;
+
+            }
+
+            .addToCart {
+                display: flex;
+                align-items: center;
+                height: 25px;
+                width: 100px;
+                justify-content: space-around;
+                font-size: 12px;
+            }
+
+            .cartbutton {
+                background-color: #dd0285;
+                border: none;
+                border-radius: 3px;
+                color: white;
+            }
+
+
+
+            .cartbutton:hover {
+                background-color: #d16ba8;
+            }
+
+            .addToFevBut {
+                background-color: gray;
+                border: none;
+                color: white;
+                width: 30px;
+                border-radius: 3px;
+            }
+
+            .addToFevBut:hover {
+                background-color: #dd0285;
+            }
+
+
+
+
+
+            .pSale{
+                text-align: center;
+            }
+            .upeerImgDiv{
+                width: 90%;
+                height: 100px;
+                border:2px solid red;
+                margin: auto;
+            }
+            .upperImg{
+                width: 100%;
+                height: 100%;
+            }
+            .midLefDivUpper{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap:5px;
+                padding-bottom: 20px;
+                border: .5px solid gray;
+                
+            }
+            .divForProfilePic{
+                width: 60%;
+                height: 100px;
+                /* border:1px solid red; */
+                border-radius: 50%;
+                margin-top: 15px;
+            }
+            .profilePic{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: #eaeaea;
+            }
+            .border{
+                /* border :2px solid red; */
+            }
+            .editProfileText{
+                color: black;
+                font-size: 13px;
+            }
+            .btnLiveChat,.btnMyTicket{
+                width: 120px;
+                height: 27px;
+                
+            }
+            .midLefDivLower{
+                padding-left: 15px;
+            }
+            .midLefDivLower>p{
+                font-size: 13px;
+            }
+            .midLefDivLower>p:hover{
+                color: blue;
+                cursor: pointer;
+            }
+            .wishlist{
+                color: blue;
+            }
+            .pageName{
+                width: 75%;
+                padding-left: 15px;
+                height: 30px;
+                color: blue;
+            }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    <div class="upeerImgDiv">
+        <img class="upperImg" src="https://img.gkbcdn.com/s3/bn/2205/1500x125-6271031b2b40c930d0488be9.jpg" alt="">
+    </div>
+    <!-- <h1>Slid</h1> -->
+    <div id="midMainDiv">
+        <div id="midLefDiv">
+            <div class="midLefDivUpper border">
+                <Div class="divForProfilePic">
+                    <img class="profilePic" src="https://content1.geekbuying.com/V1.4/en/images/accImg/man.png" alt="">
+                </Div>
+                <Div class="dForProfileEdit">
+                    <i class="fa-solid fa-pencil"></i>
+                    <a class="editProfileText" href="#">Edit profile</a>
+                </Div>
+                <Div class="dForLiveChat border">
+                    <button class="btnLiveChat border">Live Chat</button>
+                </Div>
+                <Div class="dForMyTicket border">
+                    <button class="btnMyTicket border">My Ticket</button>
+                </Div>
+            </div>
+            <div class="midLefDivLower">
+                <p>My Order</p>
+                <p class="wishlist">My Wishlist</p>
+                <p>My Reviews</p>
+                <p>My Coupons</p>
+                <p>My Q&S</p>
+                <p>My Bargain</p>
+                <p>My Sample Requests</p>
+                <p>My Wholesale Demand</p>
+                <p>My Wholesale Application</p>
+            </div>
+        </div>
+        <div class="midRigMainDiv">
+            <div class="pageName border">Wishlist</div>
+            <div id="midRigDiv" class="productDetailMainBox border"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    // console.log('a')
+
+    var inputdata = [
+        {
+            price: "603.00",
+            discount: "10% off",
+            productname: "Faces Canada Peaches N Cream Tinted Moisturizer - Light 01",
+            producturl: "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/4/54_2.jpg",
+            strickedoff: "₹599.00"
+        },
+    ]
+
+
+
+
+    function print(inputdata) {
+
+
+        console.log('a')
+        var div_productDetailMainBox = document.querySelector('.productDetailMainBox')
+        div_productDetailMainBox.innerText = '';
+
+        inputdata.map(function (e) {
+
+            //                        product image hove sale tag create and ancher tag created start
+
+
+            var div_productDetailMainBox = document.querySelector('.productDetailMainBox')
+            div_productDetailMainBox.setAttribute('id', 'productDetailMainBox')
+
+            var div_image_productdetail = document.createElement('div')
+            div_image_productdetail.setAttribute('class', 'div_image_productdetail')
+
+            div_productDetailMainBox.append(div_image_productdetail)
+
+            var div_productImgHoverSale = document.createElement('div')
+            div_productImgHoverSale.setAttribute('class', 'productImgHoverSale')
+
+            div_image_productdetail.append(div_productImgHoverSale)
+
+            var a_underlineRemove = document.createElement('a')
+            a_underlineRemove.setAttribute('class', 'underlineRemove')
+
+            div_productImgHoverSale.append(a_underlineRemove)
+
+            var div_imgHoverSale = document.createElement('div')
+            div_imgHoverSale.setAttribute('id', 'imgHoverSale')
+
+            a_underlineRemove.append(div_imgHoverSale)
+
+            var img_productImg = document.createElement('img')
+            img_productImg.setAttribute('class', 'productImg')
+            img_productImg.src = e.producturl
+
+            div_imgHoverSale.append(img_productImg);
+
+            var div_hoverSaleDiv = document.createElement('div')
+            div_hoverSaleDiv.setAttribute('class', 'hoverSaleDiv')
+
+            div_imgHoverSale.append(div_hoverSaleDiv)
+
+            var div_parntOfHover_area = document.createElement('div')
+            div_parntOfHover_area.setAttribute('class', 'parntOfHover area')
+
+            div_hoverSaleDiv.append(div_parntOfHover_area)
+
+            var div_hide = document.createElement('div')
+            div_hide.setAttribute('class', 'hide')
+
+            div_parntOfHover_area.append(div_hide)
+
+            var i_fa_solid_fa_eye = document.createElement('i')
+            i_fa_solid_fa_eye.setAttribute('class', 'fa-solid fa-eye')
+
+            div_hide.append(i_fa_solid_fa_eye)
+
+            var div_parntOfSale_area = document.createElement('div')
+            div_parntOfSale_area.setAttribute('class', 'parntOfSale area')
+            var div_saleDiv = document.createElement('div')
+            div_saleDiv.setAttribute('id', 'saleDiv')
+            var p_sale = document.createElement('p')
+            p_sale.setAttribute('class','pSale')
+            p_sale.innerText = '15% OFF'
+
+            div_saleDiv.append(p_sale)
+
+            div_parntOfSale_area.append(div_saleDiv)
+
+            div_hoverSaleDiv.append(div_parntOfSale_area)
+
+
+
+            //                                    product image hove sale tag create and ancher tag created end
+
+
+
+            //                                  product detail like name price start
+
+            var div_productDetail = document.createElement('div')
+            div_productDetail.setAttribute('class', 'productDetail')
+
+            div_image_productdetail.append(div_productDetail)
+
+            var div_productName = document.createElement('div')
+            div_productName.setAttribute('class', 'productName')
+
+            div_productDetail.append(div_productName)
+
+            var p_product_name = document.createElement('p')
+            p_product_name.innerText = e.productname;
+
+            div_productName.append(p_product_name)
+
+            var div_starRating = document.createElement('div')
+            div_starRating.setAttribute('class', 'starRating')
+
+            div_productDetail.append(div_starRating)
+
+            var span1_fa_fa_star_checked = document.createElement('span')
+            span1_fa_fa_star_checked.setAttribute('class', 'fa fa-star checked')
+
+            div_starRating.append(span1_fa_fa_star_checked)
+
+            var span2_fa_fa_star_checked = document.createElement('span')
+            span2_fa_fa_star_checked.setAttribute('class', 'fa fa-star checked')
+
+            div_starRating.append(span2_fa_fa_star_checked)
+
+            var span3_fa_fa_star_checked = document.createElement('span')
+            span3_fa_fa_star_checked.setAttribute('class', 'fa fa-star checked')
+
+            div_starRating.append(span3_fa_fa_star_checked)
+
+            var span4_fa_fa_star = document.createElement('span')
+            span4_fa_fa_star.setAttribute('class', 'fa fa-star')
+
+            div_starRating.append(span4_fa_fa_star)
+
+            var span5_fa_fa_star = document.createElement('span')
+            span5_fa_fa_star.setAttribute('class', 'fa fa-star')
+
+            div_starRating.append(span5_fa_fa_star)
+
+            var div_price = document.createElement('div')
+            div_price.setAttribute('class', 'price')
+
+            div_productDetail.append(div_price)
+
+            var div_offprice = document.createElement('div')
+            div_offprice.setAttribute('class', 'offprice')
+
+            div_price.append(div_offprice)
+
+            var s_for_offprice = document.createElement('s')
+            s_for_offprice.innerText = e.strickedoff;
+
+            div_offprice.append(s_for_offprice)
+
+            var div_currentprice = document.createElement('div')
+            div_currentprice.setAttribute('class', 'currentprice')
+            div_currentprice.innerText = e.price;
+
+            div_price.append(div_currentprice)
+
+            var div_discount = document.createElement('div')
+            div_discount.setAttribute('class', 'discount')
+            div_discount.innerText = e.discount;
+
+            div_price.append(div_discount)
+
+            var div_addToCartOrFev = document.createElement('div')
+            div_addToCartOrFev.setAttribute('class', 'addToCartOrFev')
+
+            div_productDetail.append(div_addToCartOrFev)
+
+
+
+            //                                                          BUTTON FOR ADD TO CART  START 
+            var button_cartbutton = document.createElement('button')
+            button_cartbutton.setAttribute('class', 'cartbutton')
+            //                                                          BUTTON FOR ADD TO CART END
+
+
+
+
+
+            div_addToCartOrFev.append(button_cartbutton)
+
+            var div_addToCart = document.createElement('div')
+            div_addToCart.setAttribute('class', 'addToCart')
+
+            button_cartbutton.append(div_addToCart)
+
+            var div_for_icon = document.createElement('div')
+
+            div_addToCart.append(div_for_icon)
+
+            var i_fa_solid_fa_cart_plus = document.createElement('i')
+            i_fa_solid_fa_cart_plus.setAttribute('class', 'fa-solid fa-cart-plus')
+
+            div_for_icon.append(i_fa_solid_fa_cart_plus)
+
+            var div_for_p_addcart = document.createElement('div')
+            div_for_p_addcart.setAttribute('class', 'div_for_p_addcart')
+
+            div_addToCart.append(div_for_p_addcart)
+
+            var p_for_addcart = document.createElement('p')
+            p_for_addcart.innerText = 'Add To Cart'
+
+            div_for_p_addcart.append(p_for_addcart)
+
+
+
+
+            //                                                               BUTTON FOR delet START
+            var button_addToFevBut = document.createElement('button')
+            button_addToFevBut.setAttribute('class', 'addToFevBut')
+            //                                                              BUTTON FOR delet END
+
+
+
+
+            div_addToCartOrFev.append(button_addToFevBut)
+
+            var i_for_Heart_fev = document.createElement('i')
+            i_for_Heart_fev.setAttribute('class', 'fa-solid fa-trash-can')
+
+            button_addToFevBut.append(i_for_Heart_fev)
+
+            //<i class="fa-solid fa-trash-can"></i>
+
+
+            //                                                   product detail like name price end
+
+        })
+    }
+
+
+
+
+    print(inputdata);
+    console.log(print)
+</script>
