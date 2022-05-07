@@ -39,7 +39,7 @@ var redtotal = data.reduce(function(sum,elem){
     return sum + elem.qty*elem.price;
     
 },0)
-console.log(redtotal);
+// console.log(redtotal);
 
 data.map(function(elem,index){
 

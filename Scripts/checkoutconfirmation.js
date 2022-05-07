@@ -74,3 +74,9 @@ var ship = document.querySelector("#shipping").innerText
 document.querySelector("#subtotal").innerText = redtotal1;
 
 document.querySelector("#grandtotal").innerText =redtotal1+(+ship);
+
+
+function profile(){
+    window.location.href="profilePage.html";
+}
+
