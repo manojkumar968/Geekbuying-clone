@@ -1,0 +1,30 @@
+*{
+    font-family: sans-serif;
+}
+#container{
+    text-align: center;
+    margin-top: 60px;
+}
+h1{
+    font-size: 50px;
+}
+#container img{
+    height:200px;
+    width: 200px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    height:50px;
+    width:200px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+p{
+    font-family: sans-serif;
+    margin-top: 5px;
+}
