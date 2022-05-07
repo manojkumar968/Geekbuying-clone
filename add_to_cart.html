@@ -346,6 +346,301 @@
             width: 100%;
             height: 100%;
         }
+
+        .sliderMainDiv {
+            margin-top: 50px;
+        }
+
+        .slidText {
+            margin-left: 50px;
+        }
+
+        /* slid  css */
+
+
+        #midSlid {
+            display: flex;
+            width: auto;
+            /* border: 1px solid red; */
+        }
+
+        #backward,
+        #forward {
+            /* height: 600px; */
+            /* border: 2px solid blue; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 20px; */
+        }
+
+        #forward {
+            /* margin-left:0px; */
+        }
+
+        .circle {
+            /* display: none; */
+            width: 50px;
+            height: 50px;
+        }
+
+        #midSlid:hover .circle {
+            /* display: block; */
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(173, 167, 167);
+            cursor: pointer;
+        }
+
+        .fa-chevron-left,
+        .fa-chevron-right {
+            color: white;
+            font-size: 25px;
+        }
+
+
+        .productDetailMainBox {
+            width: auto;
+            height: auto;
+            /* border: 2px solid blue; */
+            padding: 18px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto;
+            margin-top: 10px;
+            gap: 10px;
+
+        }
+
+        .div_image_productdetail {
+            padding: 10px;
+            height: 300px;
+            /* wi */
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 30px;
+            background-color: white;
+            /* margin-left: 10px; */
+        }
+
+        .div_image_productdetail:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .productImgHoverSale {
+            width: 250px;
+            height: 245px;
+            /* border: 2px solid red; */
+        }
+
+        .imgHoverSale {
+            width: 250px;
+            height: 270px;
+            /* border-radius: 2px solid red; */
+        }
+
+        .productImg {
+            /* border: 2px solid green; */
+            width: 250px;
+            height: 245px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hoverSaleDiv {
+            /* border: 2px solid grey; */
+            width: 250px;
+            height: 270px;
+            display: flex;
+            position: relative;
+            z-index: 2;
+            margin-top: -280px;
+        }
+
+
+        .hide {
+            display: none;
+            width: 30px;
+            height: 30px;
+            background-color: #dd0285;
+            border-radius: 2px;
+
+        }
+
+
+        .fa-eye {
+            color: aliceblue;
+        }
+
+        .hoverSaleDiv:hover>.parntOfHover>.hide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .area {
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+
+        .parntOfHover {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        .parntOfSale {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        #saleDiv {
+            width: 40px;
+            height: 40px;
+            background-color: #dd0285;
+            color: white;
+            display: flex;
+            margin: 40px 20px;
+            align-items: center;
+            /* padding-top: 10px; */
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            border-radius: 50%;
+
+        }
+
+        .underlineRemove {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .productDetail {
+            width: 250px;
+            height: 110px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+
+        }
+
+        .productName {
+            font-size: 12px;
+
+
+        }
+
+        .fa {
+            color: #eca330;
+        }
+
+        .starRating {
+            font-size: 10px;
+            margin-top: -5px;
+        }
+
+        .price {
+            display: flex;
+            justify-content: space-evenly;
+            width: 60%;
+            align-items: center;
+            margin: auto;
+            /* margin-top: -.5px; */
+        }
+
+        .offprice {
+            font-size: 10px;
+            /* font-weight:0 */
+        }
+
+        .currentprice {
+            font-size: 15px;
+            color: #dd0285;
+            font-weight: bold;
+        }
+
+        .discount {
+            font-size: 12px;
+            color: #008021;
+            font-weight: bold;
+        }
+
+        .addToCartOrFev {
+            display: block;
+            display: flex;
+            width: 60%;
+            margin: auto;
+            justify-content: space-between;
+            margin-bottom: -2px;
+
+        }
+
+        /* .div_image_productdetail:hover .addToCartOrFev{
+                display: block;
+                display: flex;
+                width: 60%;
+                margin: auto;
+                justify-content: space-between;
+                margin-bottom: -2px;
+
+            } */
+
+        .addToCart {
+            display: flex;
+            align-items: center;
+            height: 25px;
+            width: 100px;
+            justify-content: space-around;
+            font-size: 12px;
+        }
+
+        .cartbutton {
+            background-color: #dd0285;
+            border: none;
+            border-radius: 3px;
+            color: white;
+        }
+
+
+
+        .cartbutton:hover {
+            background-color: #d16ba8;
+        }
+
+        .addToFevBut {
+            background-color: gray;
+            border: none;
+            color: white;
+            width: 30px;
+            border-radius: 3px;
+        }
+
+        .addToFevBut:hover {
+            background-color: #dd0285;
+        }
+
+
+
+
+
+        .pSale {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -354,21 +649,6 @@
         <div id="divForImg">
             <img id="productImg" src="https://img.gkbcdn.com/s3/bn/2205/497705-626f45ba2b40c9339c112e8e.jpg" alt="img">
             <div class="movePicContainer displayFlex border">
-                <!-- <div class="smallProductImg">
-                    <img id="img1" src="" alt="">
-                </div>
-                <div class="smallProductImg">
-                    <img id="img2" src="" alt="">
-                </div>
-                <div class="smallProductImg">
-                    <img id="img3" src="" alt="">
-                </div>
-                <div class="smallProductImg">
-                    <img id="img4" src="" alt="">
-                </div>
-                <div class="smallProductImg">
-                    <img id="img5" src="" alt="">
-                </div> -->
             </div>
         </div>
         <div id="divForProduvtDetail">
@@ -492,6 +772,23 @@
             <div id="dForPriceMatch"></div>
         </div>
     </div>
+    <div class="sliderMainDiv">
+        <div class="slidTextDiv">
+            <h3 class="slidText">Recommendations for you</h3>
+        </div>
+        <div class="slidDiv">
+
+            <div id="midSlid">
+                <Div id="backward">
+                    <div class="circle" onclick="backward()"><i class="fa-solid fa-chevron-left"></i></i></div>
+                </Div>
+                <div id="midRigDiv" class="productDetailMainBox"></div>
+                <Div id="forward">
+                    <div class="circle" onclick="forward()"><i class="fa-solid fa-chevron-right"></i></i></div>
+                </Div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
@@ -604,7 +901,7 @@
 
 
     let totalItem = gE('.typeTotalProduct')
-    console.log(totalItem)
+    // console.log(totalItem)
     totalItem.value = 1;
 
     let itemIncrease = () => {
@@ -618,7 +915,7 @@
     //                                                        Item Decrease Function
 
     let itemReduce = () => {
-        console.log('a')
+        // console.log('a')
         let itemInBox = totalItem.value;
         let updateItem = Number(itemInBox) - 1
         if (updateItem < 1) {
@@ -637,7 +934,7 @@
     }
 
 
-    let arr = [
+    let arrCartSlid = [
 
         `https://img.gkbcdn.com/p/2022-03-10/SENBONO-MAX2-Smartwatch-for-Men-Black-Rubber-497705-0._w60_p1_.jpg`,
         'https://img.gkbcdn.com/p/2022-03-10/SENBONO-MAX2-Smartwatch-for-Men-Black-Rubber-497705-1._w60_p1_.jpg',
@@ -648,37 +945,17 @@
 
     ]
 
-    // arr.map((e)=>{
-    //     // console.log(e)
-    //     let movePicContainer=gE('.movePicContainer')
-    //     movePicContainer.innerHTML=null;
-    //     for(var key in e){
-    //         // console.log(e[keys])
-    //         let smallImgDiv=create('div')
-
-    //         movePicContainer.append(smallImgDiv)
-
-    //         let img=create('img');
-    //         img.src=e[key]
-    //         img.setAttribute('class','smallProductImg')
-
-    //         smallImgDiv.append(img)
-
-
-    //     }
-    // })
-
 
 
     //                                                    Forward Image Move Recoration
 
-    let lef = 0;
-    let rig = 4;
+    let lefCartSlid = 0;
+    let rigCartSlid = 4;
 
-    let forwardMove = (lef, rig) => {
+    let forwardMove = (lefCartSlid, rigCartSlid) => {
 
-        console.log(lef, rig)
-    
+        // console.log(lefCartSlid, rigCartSlid)
+
 
 
         setTimeout(() => {
@@ -686,43 +963,43 @@
             let movePicContainer = gE('.movePicContainer')
             movePicContainer.innerHTML = '';
 
-            for (let x = lef; x <= rig; x++) {
+            for (let x = lefCartSlid; x <= rigCartSlid; x++) {
 
 
 
-                console.log(x)
+                // console.log(x)
                 let smallImgDiv = create('div')
 
                 movePicContainer.append(smallImgDiv)
 
                 let img = create('img');
-                img.src = arr[x]
+                img.src = arrCartSlid[x]
                 img.setAttribute('class', 'smallProductImg')
-                img.addEventListener('click',function(){
-                    let productImg=gE('#productImg')
-                    productImg.src=arr[x];
+                img.addEventListener('click', function () {
+                    let productImg = gE('#productImg')
+                    productImg.src = arrCartSlid[x];
                 })
 
                 smallImgDiv.append(img)
 
             }
 
-            console.log('lefupper', lef, rig)
+            // console.log('lefupper', lefCartSlid, rigCartSlid)
 
-            lef++;
-            rig++;
-            console.log('leflower', lef, rig)
+            lefCartSlid++;
+            rigCartSlid++;
+            // console.log('leflower', lefCartSlid, rigCartSlid)
 
-            if (rig == arr.length) {
-                lef=0;
-                rig=4;
+            if (rigCartSlid == arrCartSlid.length) {
+                lefCartSlid = 0;
+                rigCartSlid = 4;
             }
 
-            if (rig < arr.length) {
-                forwardMove(lef, rig)
+            if (rigCartSlid < arrCartSlid.length) {
+                forwardMove(lefCartSlid, rigCartSlid)
             }
 
-          
+
 
         }, 3000)
 
@@ -734,10 +1011,383 @@
     }
 
 
-    forwardMove(lef, rig)
+    forwardMove(lefCartSlid, rigCartSlid)
+
+
+    //                         slid js
 
 
 
+
+    var inputdata = [
+        {
+            price: "3099.94",
+            discount: "45% off",
+            productname: "Creality Ender-3 S1 Pro 3D Printer",
+            producturl: "https://img.gkbcdn.com/p/2021-09-17/Anycubic-Vyper-3D-Printer-472768-0._w280_p1_.jpg",
+            strickedoff: "₹5728.92"
+        },
+        {
+            price: "₹45000 ",
+            discount: "19% off",
+            productname: "Oneplus",
+            producturl: "https://img.gkbcdn.com/p/2021-12-30/oneplus-9rt-cn-version-6-62-inch-12gb-256gb-blue-8c11d5-1640855806895._w280_p1_.jpg",
+            strickedoff: "₹55000",
+        },
+        {
+            price: "10099.94",
+            discount: "41% off",
+            productname: "Poco M3",
+            producturl: "https://img.gkbcdn.com/p/2022-02-24/Global-Version-POCO-M3-Pro-497181-0._w280_.jpg",
+            strickedoff: "₹17280",
+        },
+        {
+            price: "12099.94",
+            discount: "61% Off",
+            productname: "Cleaner Leptop",
+            producturl: "https://img.gkbcdn.com/p/2022-01-18/eMeet-C960-1080P-Webcam-with-Privacy-Cover-Black-494153-0._w280_p1_.jpg",
+            strickedoff: "₹31728.92",
+        },
+        {
+            price: "16099.94 ",
+            discount: "40% Off",
+            productname: "BMAX I11 4G LTE Tablet PC",
+            producturl: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQtQ5Grexly490r7trqfAPyon8yg-La_ySMm7Q0XLRA6QNAmSblSRCebY3thCenS6KBxR8sMvjunqY&usqp=CAc",
+            strickedoff: "₹27028.92",
+        },
+        {
+            price: "12099.94 ",
+            discount: "61% off",
+            productname: "Xiaomi Mi Robot Vacuum Cleaner Robot Virtual Wall for",
+            producturl: "https://img.gkbcdn.com/p/2022-04-06/Xiaomi-Mijia-5200mAh-Battery-Robot-Vacuum-Cleaner-499080-0._w280_p1_.jpg",
+            strickedoff: "₹31728.92",
+        },
+        {
+            price: "6289.05 ",
+            discount: "20% off",
+            productname: "XIAOMI YOUPIN JASE PC-902 Dog Hair Clipper Trimmer USB Charging Grooming",
+            producturl: "https://img.gkbcdn.com/p/2022-04-25/A-pair-of-LED-Luminous-Chopsticks-499968-0._w280_p1_.jpg",
+            strickedoff: "₹7861.51",
+        },
+        {
+            price: "6289.05 ",
+            discount: "20% off",
+            productname: "1.8L Pet Water Dispenser Filter Automatic Circulation with 2 Water Flow Modes and 6",
+            producturl: "https://img.gkbcdn.com/p/2022-04-28/Zeblaze-Stratos-2-Smartwatch-1-3---AMOLED-Display-Blue-500033-0._w280_p1_.jpg",
+            strickedoff: "₹7861.51",
+        },
+        {
+            price: "6289.05 ",
+            discount: "20% off",
+            productname: "A pair of LED Luminous Chopsticks Creative Tableware Glow Sticks for Party,",
+            producturl: "https://img.gkbcdn.com/p/2022-04-20/1-8L-Pet-Water-Dispenser-Filter-499792-0._w280_p1_.jpg",
+            strickedoff: "₹7861.51",
+        },
+        {
+            price: "38475.04 ",
+            discount: "38% off",
+            productname: "kingSmith WalkingPad R1 Pro Tredmill 2 in 1 smart Folding",
+            producturl: "https://img.gkbcdn.com/p/2020-07-21/walkingpad-treadmill-r1-smart-folding-walking-and-running-machine-1595324388511._w280_p1_.jpg",
+            strickedoff: "₹62816.89",
+        },
+        {
+            price: "65957.78 ",
+            discount: "45% off",
+            productname: "ADO A20 Electric folding Bike 20 inch City Bicycle",
+            producturl: "https://img.gkbcdn.com/p/2021-06-17/onebot-s6-folding-electric-bike-250w-motor-max-25km-h-black-1623929411239._w280_p1_.jpg",
+            strickedoff: "₹117782.36",
+        },
+
+    ]
+
+    //                        
+
+
+    function print(inputdata) {
+
+
+        // console.log('a')
+        var div_productDetailMainBox = document.querySelector('.productDetailMainBox')
+        div_productDetailMainBox.innerText = '';
+
+        inputdata.map(function (e) {
+
+            //                        product image hove sale tag create and ancher tag created start
+
+
+            var div_productDetailMainBox = document.querySelector('.productDetailMainBox')
+            div_productDetailMainBox.setAttribute('id', 'productDetailMainBox')
+
+            var div_image_productdetail = document.createElement('div')
+            div_image_productdetail.setAttribute('class', 'div_image_productdetail')
+
+            div_productDetailMainBox.append(div_image_productdetail)
+
+            var div_productImgHoverSale = document.createElement('div')
+            div_productImgHoverSale.setAttribute('class', 'productImgHoverSale')
+
+            div_image_productdetail.append(div_productImgHoverSale)
+
+            var a_underlineRemove = document.createElement('a')
+            a_underlineRemove.setAttribute('class', 'underlineRemove')
+
+            div_productImgHoverSale.append(a_underlineRemove)
+
+            var div_imgHoverSale = document.createElement('div')
+            div_imgHoverSale.setAttribute('id', 'imgHoverSale')
+
+            a_underlineRemove.append(div_imgHoverSale)
+
+            var img_productImg = document.createElement('img')
+            img_productImg.setAttribute('class', 'productImg')
+            img_productImg.src = e.producturl
+
+            div_imgHoverSale.append(img_productImg);
+
+            var div_hoverSaleDiv = document.createElement('div')
+            div_hoverSaleDiv.setAttribute('class', 'hoverSaleDiv')
+
+            div_imgHoverSale.append(div_hoverSaleDiv)
+
+            var div_parntOfHover_area = document.createElement('div')
+            div_parntOfHover_area.setAttribute('class', 'parntOfHover area')
+
+            div_hoverSaleDiv.append(div_parntOfHover_area)
+
+            var div_hide = document.createElement('div')
+            div_hide.setAttribute('class', 'hide')
+
+            div_parntOfHover_area.append(div_hide)
+
+            var i_fa_solid_fa_eye = document.createElement('i')
+            i_fa_solid_fa_eye.setAttribute('class', 'fa-solid fa-eye')
+
+            div_hide.append(i_fa_solid_fa_eye)
+
+            var div_parntOfSale_area = document.createElement('div')
+            div_parntOfSale_area.setAttribute('class', 'parntOfSale area')
+            var div_saleDiv = document.createElement('div')
+            div_saleDiv.setAttribute('id', 'saleDiv')
+            var p_sale = document.createElement('p')
+            p_sale.setAttribute('class', 'pSale')
+            p_sale.innerText = e.discount;
+
+            div_saleDiv.append(p_sale)
+
+            div_parntOfSale_area.append(div_saleDiv)
+
+            div_hoverSaleDiv.append(div_parntOfSale_area)
+
+
+
+            //                                    product image hove sale tag create and ancher tag created end
+
+
+
+            //                                  product detail like name price start
+
+            var div_productDetail = document.createElement('div')
+            div_productDetail.setAttribute('class', 'productDetail')
+
+            div_image_productdetail.append(div_productDetail)
+
+            var div_productName = document.createElement('div')
+            div_productName.setAttribute('class', 'productName')
+
+            div_productDetail.append(div_productName)
+
+            var p_product_name = document.createElement('p')
+            p_product_name.innerText = e.productname;
+
+            div_productName.append(p_product_name)
+
+            var div_starRating = document.createElement('div')
+            div_starRating.setAttribute('class', 'starRating')
+
+            div_productDetail.append(div_starRating)
+
+            var span1_fa_fa_star_checked = document.createElement('span')
+            span1_fa_fa_star_checked.setAttribute('class', 'fa fa-star checked')
+
+            div_starRating.append(span1_fa_fa_star_checked)
+
+            var span2_fa_fa_star_checked = document.createElement('span')
+            span2_fa_fa_star_checked.setAttribute('class', 'fa fa-star checked')
+
+            div_starRating.append(span2_fa_fa_star_checked)
+
+            var span3_fa_fa_star_checked = document.createElement('span')
+            span3_fa_fa_star_checked.setAttribute('class', 'fa fa-star checked')
+
+            div_starRating.append(span3_fa_fa_star_checked)
+
+            var span4_fa_fa_star = document.createElement('span')
+            span4_fa_fa_star.setAttribute('class', 'fa fa-star')
+
+            div_starRating.append(span4_fa_fa_star)
+
+            var span5_fa_fa_star = document.createElement('span')
+            span5_fa_fa_star.setAttribute('class', 'fa fa-star')
+
+            div_starRating.append(span5_fa_fa_star)
+
+            var div_price = document.createElement('div')
+            div_price.setAttribute('class', 'price')
+
+            div_productDetail.append(div_price)
+
+            var div_offprice = document.createElement('div')
+            div_offprice.setAttribute('class', 'offprice')
+
+            div_price.append(div_offprice)
+
+            var s_for_offprice = document.createElement('s')
+            s_for_offprice.innerText = e.strickedoff;
+
+            div_offprice.append(s_for_offprice)
+
+            var div_currentprice = document.createElement('div')
+            div_currentprice.setAttribute('class', 'currentprice')
+            div_currentprice.innerText = e.price;
+
+            div_price.append(div_currentprice)
+
+            var div_discount = document.createElement('div')
+            div_discount.setAttribute('class', 'discount')
+            div_discount.innerText = e.discount;
+
+            div_price.append(div_discount)
+
+
+
+
+
+
+
+
+
+
+        })
+    }
+
+
+
+
+    // print(inputdata);
+    // console.log(print)
+
+
+
+
+
+    let arrRecomSlid = inputdata
+
+    let lefRecomSlid = 0;
+    let rigRecomSlid = 3;
+
+    totalData = arrRecomSlid.slice(lefRecomSlid, rigRecomSlid + 1)
+
+    print(totalData)
+
+
+    //                                         forward function
+    let forward = () => {
+        lefRecomSlid += 1;
+        rigRecomSlid += 1;
+
+        // console.log(lefRecomSlid, rigRecomSlid)
+
+        if (lefRecomSlid >= arrRecomSlid.length) {
+            lefRecomSlid = lefRecomSlid - arrRecomSlid.length;
+        }
+
+        if (rigRecomSlid >= arrRecomSlid.length) {
+            rigRecomSlid = rigRecomSlid - arrRecomSlid.length;
+        }
+        // console.log(lefRecomSlid, rigRecomSlid)
+
+
+        let lefData;
+        let rigData;
+        let totalData;
+
+        if (lefRecomSlid > rigRecomSlid) {
+            // console.log('in',lef,arr.length)
+            lefData = arrRecomSlid.slice(lefRecomSlid, arrRecomSlid.length)
+            rigData = arrRecomSlid.slice(0, rigRecomSlid + 1)
+            // console.log(lefData,rigData)
+            totalData = [...lefData, ...rigData]
+            // console.log(totalData)
+        }
+        else {
+            // console.log('else',lef,rig)
+            totalData = arrRecomSlid.slice(lefRecomSlid, rigRecomSlid + 1)
+            // console.log(totalData)
+        }
+
+
+        //                                           cell to function Print Data
+        print(totalData)
+        // console.log(totalData)
+
+
+    }
+
+
+
+
+
+    //                                                    backward function
+
+
+
+    let backward = () => {
+
+        // console.log(lefRecomSlid, rigRecomSlid)
+        lefRecomSlid -= 1;
+        rigRecomSlid -= 1;
+
+        // console.log(lefRecomSlid, rigRecomSlid)
+
+
+        if (lefRecomSlid < 0) {
+            lefRecomSlid = arrRecomSlid.length + lefRecomSlid
+        }
+
+        if (rigRecomSlid < 0) {
+            rigRecomSlid = arrRecomSlid.length + rigRecomSlid;
+        }
+
+        // console.log(lefRecomSlid, rigRecomSlid)
+
+
+
+
+        let lefData;
+        let rigData;
+        let totalData;
+
+        if (lefRecomSlid > rigRecomSlid) {
+            // console.log('in',lef,arr.length)
+            lefData = arrRecomSlid.slice(lefRecomSlid, arrRecomSlid.length)
+            rigData = arrRecomSlid.slice(0, rigRecomSlid + 1)
+            // console.log(lefData,rigData)
+            totalData = [...lefData, ...rigData]
+            // console.log(totalData)
+        }
+        else {
+            // console.log('else',lef,rig)
+            totalData = arrRecomSlid.slice(lefRecomSlid, rigRecomSlid + 1)
+            // console.log(totalData)
+        }
+
+        //                                            cell to print Data
+
+        print(totalData)
+
+
+
+    }
 
 
 
