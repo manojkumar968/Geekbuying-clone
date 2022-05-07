@@ -79,4 +79,6 @@ document.querySelector("#grandtotal").innerText =redtotal1+(+ship);
 function profile(){
     window.location.href="profilePage.html";
 }
-
+function place(){
+    window.location.href="checkout.html";
+}
