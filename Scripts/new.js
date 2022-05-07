@@ -340,6 +340,7 @@ cartData.map(function(el){
   btn.setAttribute("id","wishheart");
   btn.style.color = "grey"
   btn.addEventListener("click",function(){
+   
       btnwish(el);
           if(btn.style.color = "grey" ){
               btn.style.color = "red";
