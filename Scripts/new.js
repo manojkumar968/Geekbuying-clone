@@ -2,7 +2,11 @@
 // let n=document.getElementById("navbar")
 // n.innerHTML=navbar();
 
+// document.querySelector("#tonavimg").addEventListener("click", homepageFun);
 
+function home(){
+    window.location.href = "index.html";
+}
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");

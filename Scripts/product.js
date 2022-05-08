@@ -289,7 +289,7 @@ document.querySelector(".box3").append(div);
 function gotoCart(data){
     console.log(data);
  localStorage.setItem("cart",JSON.stringify(data));
- window.location.href="cart.html"
+ window.location.href="add_to_cart.html"
 }
 
 function  addtowishlist(data){
