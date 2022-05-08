@@ -501,6 +501,7 @@ html{
     margin-top: -.48rem;
     height: 5rem;
    object-fit: cover;
+   
     
   }
   #secondnav{
@@ -737,6 +738,7 @@ html{
   background-color: white;
   /* justify-content: space-between */
   margin-left: 8rem;
+  cursor: pointer;
    
   }
   #navbartwo>div>img{

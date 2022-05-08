@@ -3,14 +3,14 @@ let navbar=()=>{
 
     <div id="container">
     <div>
-        <img id="tonavimg" src="https://img.gkbcdn.com/s3/bn/2205/1920x80-62709a2b2b40c92fe40c1661.jpg" alt="">
+        <img id="tonavimg" src="https://img.gkbcdn.com/s3/bn/2205/1920x80-627652482b40c9219884b811.jpg" alt="">
         <div id="secondnav">
             <div id="second1">
                 <div id="iconmob"><i class="fa-thin fa-mobile"></i>
                 </div>
                   
                         <div class="dropdown">
-                            <span>Save BIG with Our app!</span>
+                            <span>Save BIG with Our app! <img id="img555" src="https://sugarbook.com/assets/img/down-arrow-light-grey.svg" alt=""> </span>
                             <div class="dropdown-content">
                             <p>Get exclusive app deals and discounts, download our app & SAVE</p>
                             <div  id="barcode">
@@ -35,9 +35,9 @@ let navbar=()=>{
                     <!--  -->
                     
                    
-                    <!-- <div>Language</div> -->
+                    <!-- <div>Language </div> -->
                     <div class="dropdown">
-                        <span>Language</span>
+                        <span>Language <img id="img555" src="https://sugarbook.com/assets/img/down-arrow-light-grey.svg" alt=""></span>
                         <div class="dropdown-content1">
                             <p>English</p>
                         <p>Italiano</p>
@@ -115,7 +115,7 @@ let navbar=()=>{
                           </div>
                         <div><img src="https://m.media-amazon.com/images/I/51yY07ZOhHL._AC_SY450_.jpg" alt=""></div>
                       
-                        <div> / INR</div>
+                        <div style="font-size="13px"> / INR <img style="width: 1.1rem;height: 1.1rem;margin-top:-.8rem" src="https://sugarbook.com/assets/img/down-arrow-light-grey.svg" alt=""></div>
 
                      
                         
@@ -123,7 +123,7 @@ let navbar=()=>{
 
                     <!-- <div> Support Center </div> -->
                     <div class="dropdown">
-                        <span>Support Center</span>
+                        <span>Support Center <img id="img555" src="https://sugarbook.com/assets/img/down-arrow-light-grey.svg" alt=""></span>
                         <div class="dropdown-content">
                             <div>
                                 <i class="fa-brands fa-rocketchat"></i>
@@ -155,10 +155,10 @@ let navbar=()=>{
    
 
     <div id="navbartwo">
-        <div onclick="home()"><img src="./Images/logogeek.PNG" alt=""></div>
+        <div onclick="home()"><img src="https://cdn.megabonus.com/images/shop_logo/origin/geekbuyingoptimizedcom_shop_594.png" alt=""></div>
        
         <div class="dropdown2">
-            <button onclick="myFunction()" class="dropbtn">All Categories</button>
+             <button onclick="myFunction()" class="dropbtn">All Categories</button>
             <div id="myDropdown" class="dropdown-content2">
             <div id="down">
                 <div>
@@ -219,7 +219,7 @@ let navbar=()=>{
         <a class="decarution" href="shoppingcart.html">
         <div id="cart">
         <i  class="fa-solid fa-bag-shopping"></i>
-        <div><p id="show">0</p>
+        <div><p id="show" >0</p>
             <p>Cart</p>
         </div>
     </div></a>
@@ -231,7 +231,7 @@ let navbar=()=>{
 
     <div id="shop">
         <div class="dropdown3">
-            <span>Shop All Categories</span>
+            <span>Shop All Categories <i class="fa-solid fa-caret-down"></i></span>
             <div class="dropdown-content3">
             <!-- <p>Local Warehouses</p> -->
 
