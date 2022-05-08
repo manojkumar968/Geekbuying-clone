@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+
+
  
     <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/24c494a6b6.js"
-      crossorigin="anonymous"
-    ></script>
+  
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -41,50 +47,60 @@
         margin-top: 23px;
         gap: 20px;
       }
+      #door{
+        margin-top: 250px;
+
+      }
     
     </style>
 
 </head>
 <body>
+
+  
     <!-- <hr> -->
 
     <div id="navbar">
 
     </div>
-   
-    <div class="Carouselcontainer">
+
+    <div  id="printdata"></div>
+<div id="door">
      
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-      
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-                <div class="item active">
-                    <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-627102d02b40c930d0c34570.jpg">
-                  </div>
+  <div class="Carouselcontainer">
+     
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+            <div class="item active">
+                <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-627102d02b40c930d0c34570.jpg">
+              </div>
+        
+              <div class="item">
+                <img src="https://img.gkbcdn.com/s3/bn/2204/1090x422-626a65222b40c9340c43a37a.jpg" alt="" style="width:100%;">
+              </div>
             
-                  <div class="item">
-                    <img src="https://img.gkbcdn.com/s3/bn/2204/1090x422-626a65222b40c9340c43a37a.jpg" alt="" style="width:100%;">
-                  </div>
-                
-                  <div class="item">
-                    <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-627095d62b40c92fe444d3aa.jpg" alt="" style="width:100%;">
-                  </div>
-                  <div class="item">
-                    <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-627097f82b40c92fe444d3ac.jpg" alt="" style="width:100%;">
-                  </div>
+              <div class="item">
+                <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-627095d62b40c92fe444d3aa.jpg" alt="" style="width:100%;">
+              </div>
+              <div class="item">
+                <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-627097f82b40c92fe444d3ac.jpg" alt="" style="width:100%;">
+              </div>
 
-                  <div class="item ">
-                    <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-6274f0ca2b40c938fc33ef3d.jpg">
-                  </div>
+              <div class="item ">
+                <img src="https://img.gkbcdn.com/s3/bn/2205/1090x422-6274f0ca2b40c938fc33ef3d.jpg">
+              </div>
 
-               
-          </div>
+           
+      </div>
+</div>
       
           
           <!-- Left and right controls -->
@@ -200,21 +216,34 @@
               </div>
 
 
+            <a style="color: black; text-decoration: none;" href="kitchen.html">
               <div>
-                  <p class="head">3D Printer and Laser Engravers</p>
-                  <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2204/laser-6260f66a2b40c93724be1ee9.jpg" alt="">
-                  <p class="para">Your at-home 3D laser printer that makes magical things at the push of a button.</p>
-              </div>
+                <p class="head">3D Printer and Laser Engravers</p>
+                <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2204/laser-6260f66a2b40c93724be1ee9.jpg" alt="">
+                <p class="para">Your at-home 3D laser printer that makes magical things at the push of a button.</p>
+            </div>
+
+            </a>
+
               <div>
                   <p class="head">Gamesir Brand Sale</p>
                   <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2204/Gamesir-6260f6532b40c93724be1ee8.jpg" alt="">
                   <p class="para">Exploring a comprehensive gaming experience as always through Gamesir</p>
               </div>
-              <div>
+
+
+              <a style="color: black; text-decoration: none;" href="product.html">
+                <div>
                   <p class="head">E-Bikes</p>
                   <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2203/481198-623d205c2b40c91d90971af4.jpg" alt="">
                   <p class="para">Road, mountain, gravel, commuter, they've all got electric versions.</p>
               </div>
+              </a>
+
+            
+
+
+
               <div>
                   <p class="head">Xmimng 1080 Projector</p>
                   <img class="watch_img" src="https://img.gkbcdn.com/s3/bn/2204/497217-624fa3172b40c931484ec7f2.jpg" alt="">
@@ -460,37 +489,66 @@
             <h4>Tranding categories </h4>
           </div>
           <div id="arrival1">
+
+            <a href="./robot/rob.html">
               <div>
-                  <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2109/robotvacuums60d29088e21ad3c62c1974d5-6135e4de2b40c928c4cffc23.jpg" alt="">
-                  <p class="para1">Robot Vaccume</p>
-                
-              </div>
+                <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2109/robotvacuums60d29088e21ad3c62c1974d5-6135e4de2b40c928c4cffc23.jpg" alt="">
+                <p class="para1">Robot Vaccume</p>
+              
+            </div>
+
+            </a>
+
+            <a href="./electronic_scooter/rob.html">
               <div>
                 <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2109/02020225144159Outdoor-6135e4ed2b40c92078307531.jpg" alt="">
                 <p class="para1">Electric Scooter</p>
                 
               </div>
+
+            </a>
+         
+             
+
+            <a href="./printer/rob.html">
               <div>
                 <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2112/3d-61b0157f2b40c9211cc0ca18.jpg" alt="">
                 <p class="para1">3D Printers</p>
           
               </div>
+
+            </a>
+             
+
+            <a href="electronic.html">
               <div>
                 <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2109/electronics-6135e6ac2b40c916ac3b2823.jpg">
                 <p class="para1">Electronic</p>
                 
               </div>
-             
+
+            </a>
+
+
+            <a href="https://www.geekbuying.com/category/Cordless-Vacuum-Cleaners-2084/">
               <div>
                 <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2109/02020516164612h6-6135e5222b40c92078307532.jpg" alt="">
                 <p class="para1">Cordless vaccume</p>
                 
               </div>
+
+            </a>
+          
+             
+            <a href="./leptop/rob.html">
               <div>
                 <img class="watch_img"  src="https://img.gkbcdn.com/s3/c/2112/laptop-61b015fa2b40c9211cc0ca19.jpg" alt="">
                 <p class="para1">Laptops & tablets</p>
                 
               </div>
+            </a>
+            
+            
              
 
           </div>
@@ -640,7 +698,7 @@
     alt=""></div>
 
 
-    <div  id="printdata"></div>
+    
 
 
 

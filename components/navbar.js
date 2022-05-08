@@ -155,7 +155,7 @@ let navbar=()=>{
    
 
     <div id="navbartwo">
-        <div onclick="home()"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAP-YgVSM3sMF2O4-9bDy7dEfxUiyxHbFDT4SeAEvWKaVkGMG0" alt=""></div>
+        <div onclick="home()"><img src="./Images/logogeek.PNG" alt=""></div>
        
         <div class="dropdown2">
             <button onclick="myFunction()" class="dropbtn">All Categories</button>
@@ -191,27 +191,40 @@ let navbar=()=>{
 
 
           <div>
-            <input type="text" id="query" placeholder="search by keyboards">
+               <input type="text" id="query" placeholder="search by keyboards">
           </div>
           <div>
-             <i class="fa-solid fa-magnifying-glass search"></i>
+                 <i class="fa-solid fa-magnifying-glass search"></i>
           </div>
-          <div id="user"><i class="fa-regular fa-user"></i>
+
+          <a class="decarution" href="SignIn.html">
+          <div id="user">
+              <i class="fa-regular fa-user"></i>
+          
             <p>sign in</p>
         
-        </div>
+        </div></a>
 
+        <a class="decarution" href="wishlistPage.html">
         <div id="wish">
-            <i class="fa-regular fa-heart"></i>
-            <p>wishlist</p>
-        </div>
+        <i class="fa-regular fa-heart"></i>
+       
+           
+           <p>wishlist</p>
+       </div>
+        </a>
 
+       
+
+        <a class="decarution" href="shoppingcart.html">
         <div id="cart">
-            <i  class="fa-solid fa-bag-shopping"></i>
-            <div><p is="show">0</p>
-                <p>Cart</p>
-            </div>
+        <i  class="fa-solid fa-bag-shopping"></i>
+        <div><p id="show">0</p>
+            <p>Cart</p>
         </div>
+    </div></a>
+
+     
           
     </div>
 
@@ -275,13 +288,13 @@ let navbar=()=>{
           </div>
           <div>
             <div id="new">
-                <a href="#">New</a>
-            <a href="#">Top seller</a>
-            <a href="#">Brand</a>
+                <a href="new.html">New</a>
+            <a href="top-seller.html">Top seller</a>
+            <a href="https://www.geekbuying.com/top_brand_at_geekbuying/">Brand</a>
             <a href="#">Clearance</a>
             <a href="#">Deals</a>
             <a href="#"> Bargain</a>
-            <a href="#">Coupon</a>
+            <a href="coupon.html">Coupon</a>
           </div>
           </div>
     </div>

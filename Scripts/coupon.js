@@ -1,3 +1,10 @@
+// import { navbar } from "../components/navbar.js";
+// let n=document.getElementById("navbar")
+// n.innerHTML=navbar();
+
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

@@ -1,4 +1,3 @@
-
 var cartData = [
     {
     qty: 3,
@@ -16,7 +15,7 @@ var cartData = [
     strickedoff:"" },
     {
     price: "1373",
-    qty:2,
+    qty:4,
     discount: "",
     productname: "Portable Quick-drying  Superfine Fiber With Silicone Sleeve For Travel Outdoor-Gray",
     producturl: "https://img.gkbcdn.com/p/2020-05-07/30-x-100cm-Portable-Quick-drying-Cooling-Towel-Gray-903740-._w280_.jpg",
@@ -27,7 +26,7 @@ localStorage.setItem("cartData",JSON.stringify(cartData));
 
 var data = JSON.parse(localStorage.getItem("cartData"));
 
-console.log(data);
+// console.log(data);
 
 var quantity = data.length;
 
@@ -45,6 +44,8 @@ data.map(function(elem,index){
 
     var price = elem.qty*elem.price;
 
+    console.log(elem,index)
+
     let mid3div = document.createElement("div");
     mid3div.setAttribute("id","mid3div");
 
@@ -57,7 +58,7 @@ data.map(function(elem,index){
     proddesc.setAttribute("id","proddesc");
 
     let prodprice = document.createElement("p");
-    prodprice.innerText ="₹"+ elem.price;
+    prodprice.innerText = elem.price;
     prodprice.setAttribute("id","prodprice");
 
     let qtydiv = document.createElement("div");
@@ -66,10 +67,25 @@ data.map(function(elem,index){
     let qtydiv1 = document.createElement("div");
     qtydiv1.setAttribute("id","qtydiv1")
     qtydiv1.innerText ="-";
+
+
+
     qtydiv1.onclick = function(){
         event.preventDefault();
-        document.querySelector("#qtydiv2").innerText = qty--;
+
+        if(Number(qtydiv2.innerText)>1)
+        {
+            qtydiv2.innerText=Number(qtydiv2.innerText)-1;
+            price2.innerText=Number(prodprice.innerText)*Number(qtydiv2.innerText)
+            totalPrice.innerHTML=Number(totalPrice.innerHTML)-Number(elem.price)
+            // let changeTotalPrice=
+            // console.log(totalPrice )
+            // console.log(elem.price)
+        }
+      
     }
+
+
     var qty = elem.qty;
     let qtydiv2 = document.createElement("div");
     qtydiv2.setAttribute("id","qtydiv2")
@@ -78,16 +94,23 @@ data.map(function(elem,index){
     let qtydiv3 = document.createElement("div");
     qtydiv3.setAttribute("id","qtydiv3")
     qtydiv3.innerText ="+";
+
+
     qtydiv3.onclick = function(){
         event.preventDefault();
-        document.querySelector("#qtydiv2").innerText = qty++;
+        qtydiv2.innerText=Number(qtydiv2.innerText)+1;
+        price2.innerText=Number(prodprice.innerText)*Number(qtydiv2.innerText)
+        totalPrice.innerHTML=Number(totalPrice.innerHTML)+Number(elem.price)
+
     }
+
 
     qtydiv.append(qtydiv1,qtydiv2,qtydiv3)
 
     let price2 = document.createElement("p");
-    price2.innerText = "₹"+price;
+    price2.innerText = price;
     price2.setAttribute("id","price2");
+    
 
     let operation = document.createElement("div");
     operation.setAttribute("id","operation")
@@ -112,7 +135,8 @@ data.map(function(elem,index){
     
     document.querySelector("#mid3").append(mid3div);
 
-    document.querySelector("#total-price").innerText = redtotal;
+    let totalPrice=document.querySelector("#total-price")
+    totalPrice.innerText = redtotal;
 });
 
 function removeitem(elem,index)
@@ -134,6 +158,12 @@ function ptoc(){
     }
     
 }
+
+
+
+
+
+
 
 
 

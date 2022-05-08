@@ -7,13 +7,483 @@
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <link rel="stylesheet" href="./Styles/top-seller.css">
+ 
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+      <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+
       <title>top-seller</title>
+      <style>
+      
+      #footer{
+width: 100%;
+/* height: 400px; */
+/* border: 1px solid red; */
+padding-top: 50px;
+display: flex;
+margin-top: 8rem;
+}
+#footer>div{
+/* border: 1px solid blue; */
+width: 100%;
+/* height: 200px; */
+}
+#social{
+
+display: flex;
+/* border: 1px solid black;  */
+
+}
+#social>div{
+/* border: 1px solid; */
+width: 100%;
+height: 50px;
+
+gap: 30px;
+}
+.social_gap>i{
+margin-left: 20px;
+/* border: 1px solid red; */
+}
+.social_gap>div>i{
+margin-left: 20px;
+/* border: 1px solid red; */
+}
+.social_gap{
+display: flex;
+gap: 30px;
+}
+
+#help{
+display: flex;
+margin-left:30px;
+
+}
+#help>div{
+width: 30%;
+/* height: 200px; */
+/* border: 1px solid red; */
+font-size: 13px;
+}
+#scribe{
+width: 350px;
+height: 25px;
+font-size: 13px;
+margin-left: 1.5rem;
+} 
+#footer>div>button{
+width: 120px;
+height: 31px;
+margin-left: -4px;
+border: none;
+
+background-color: #074ea3;
+color: white;
+
+} 
+#hr1>hr{
+border: none;
+}
+#marginleft{
+margin-left: 100px;
+}
+#text{
+width: 75%;
+/* line-height: ; */
+font-size: 13px;
+}
+#peo{
+width: 80%;
+margin: auto;
+margin-top: 30px;
+
+}
+#peopler_search{
+width: 80%;
+margin: auto;
+margin-top: 20px;
+
+
+}
+#peopler_search>button{
+gap: 30px;
+/* border: 1px solid blue; */
+height: 1.5rem;
+margin-left: .5rem;
+background-color: rgb(236, 231, 231);
+border: none;
+cursor: pointer;
+
+}
+button:hover{
+   color: blue;
+}
+#lang{
+
+margin: auto;
+margin-left: 200px;
+margin-top: 20px;
+font-weight: 600;
+color: grey;
+}
+#pay{
+margin-left: 100px;
+margin-top: 30px;
+
+}
+#pay>img{
+   width: 60rem;
+}
+
+
+
+
+/* product css */
+
+#printdata{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+
+} 
+/* #image img{
+    width: 100%;
+} */
+.image>img{
+    width: 100%;
+    /* border: 5px solid red; */
+    height: 400px;
+}
+#buybtn{
+    color: white;
+    background-color: tomato;
+    width: 70px;
+    height: 25px;
+}
+#geek_buying{
+     margin-left: 1rem;
+}
+h4{
+   margin-left: .75rem;
+   font-size: .85rem;
+}
+
+
+      </style>
    </head>
    <body>
+
+     
+      <div id="navbar">
+         <div id="container">
+            <div>
+                <img id="tonavimg" src="https://img.gkbcdn.com/s3/bn/2205/1920x80-627652482b40c9219884b811.jpg" alt="">
+                <div id="secondnav">
+                    <div id="second1">
+                     <div id="iconmob"><i class="fa-thin fa-mobile"></i>
+                        </div>
+                          
+                                <div class="dropdown">
+                                    <span>Save BIG with Our app! <img id="img555" src="https://sugarbook.com/assets/img/down-arrow-light-grey.svg" alt=""></span>
+                                    <div class="dropdown-content">
+                                    <p>Get exclusive app deals and discounts, download our app & SAVE</p>
+                                    <div  id="barcode">
+                                        <div>
+                                            <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/android_app.png" alt="">
+                                        </div>
+                                        <div>
+                                            <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/app_store.jpg" alt=""></div>
+                                            <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/google_play.jpg" alt=""></div>
+                                            <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/gallery.jpg" alt=""></div>
+                                            
+                                          
+                                        </div>
+                                        
+                                    </div>
+                                    <h3>Go to mobile site</h3>
+                                    <!-- <img src="https://m.media-amazon.com/images/I/51yY07ZOhHL._AC_SY450_.jpg" alt=""> -->
+                                    </div>
+                                  </div>
+        
+                           
+                            <!--  -->
+                            
+                           
+                            <!-- <div>Language</div> -->
+                            <div class="dropdown">
+                                <span>Language <img id="img555" src="https://sugarbook.com/assets/img/down-arrow-light-grey.svg" alt=""></span>
+                                <div class="dropdown-content1">
+                                    <p>English</p>
+                                <p>Italiano</p>
+                                <p>Deutsch</p>
+                                <p>Español</p>
+                                <p>Français</p>
+                                <p>Português</p>
+                                <p>Slovenčina</p>
+                                <p>Magyar</p>
+                                <p>Slovenščina</p>
+                                <p>Lietuvių kalba</p>
+                                <p>Svenska</p>
+                                <p>Ελληνικά</p>
+                                <p>Dansk</p>
+                                <p>עברית</p>
+                                <p>Hrvatski jezik</p>
+                                <p>Polskie</p>
+                                <p>Limba română</p>
+                                <p>Čeština</p>
+                                <p>Japanese</p>
+        
+        
+                                </div>
+                              </div>
+        
+        
+                              
+                             
+                            <div id="navimg">
+        
+                                
+                                <!-- <div>ship to</div> -->
+                                <div class="dropdown">
+                                    <span >Ship to</span>
+                                    <div class="dropdown-content">
+                                   <h3>Select Regional Settings</h3>
+                                   <p>Ship to</p>
+                                  
+                                   <div id="country_select">
+                                       <img  src="https://m.media-amazon.com/images/I/51yY07ZOhHL._AC_SY450_.jpg" alt="">
+                                       <p>India</p>
+                                       <select  class="dropbtn1" name="">
+                                        <br>
+                                           
+                                           <option value="">India</option>
+                                           <option value="">United state</option>
+                                           <option value="">United Kindom</option>
+                                           <option value="">Itley</option>
+                                           <option value="">France</option>
+                                           <option value="">Span</option>
+                                           <option value="">German</option>
+                                           <option value="">Japan</option>
+                                           <option value="">China</option>
+                                           <option value="">Erope</option>
+        
+                                       </select>
+                                   </div>
+                                   <p>Currency</p>
+                                   <div id="currency">
+                                       <p>INR=</p>
+                                       <select name="" id="">
+                                           <div id="doller">
+                                               <div>
+                                                   <p>Ruppes</p>
+                                               </div>
+                                               <div></div>
+                                           </div>
+                                       </select>
+        
+                                   </div>
+                                   <button id="save">Save</button>
+        
+        
+                                    </div>
+                                  </div>
+                                <div ><img id="img333" src="https://m.media-amazon.com/images/I/51yY07ZOhHL._AC_SY450_.jpg" alt=""></div>
+                              
+                                <div style="font-size: .75rem; color:rgb(99, 96, 96) ; margin-top: -.4rem;"> /INR <img style="width: .7rem; margin-top: .6rem;margin-left:.1rem ;height: .6rem; " src="https://sugarbook.com/assets/img/down-arrow-light-grey.svg" alt=""></div>
+        
+                             
+                                
+                            </div>
+        
+                            <!-- <div> Support Center </div> -->
+                            <div class="dropdown">
+                                <span>Support Center <img id="img555" src="https://sugarbook.com/assets/img/down-arrow-light-grey.svg" alt=""></span>
+                                <div class="dropdown-content">
+                                    <div>
+                                        <i class="fa-brands fa-rocketchat"></i>
+                                        <p> Live Chat</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-rocketchat"></i>
+                                        <!-- <i class="fa-solid fa-arrow-up-right"></i> -->
+                                        <p>Ticket</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-rocketchat"></i>
+                                        <!-- <i class="fa-solid fa-message-question"></i> -->
+                                        <p>Help Centre</p>
+                                    </div>
+                               
+                                </div>
+                              </div>
+                    </div>
+        
+                </div>
+                <!-- <hr style="margin-top: -.25rem;color: rgb(255, 255, 255);"> -->
+        
+            </div>
+            
+            
+           
+        
+            <div id="navbartwo">
+                <div onclick="home()"><img src="data:image/jpeg;base64,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" alt=""></div>
+               
+                <div class="dropdown2" style="width: 10rem;">
+                    <button onclick="myFunction()" class="dropbtn">All Categories</button>
+                    <div id="myDropdown" class="dropdown-content2">
+                    <div id="down">
+                        <div>
+                            <a href="#">All Categories</a>
+                            <a href="#">Smart Home & Garden</a>
+                            <a href="#">Phones & Accessories</a>
+                            <a href="#">Computers, Tablets & Accessories</a>
+                            <a href="#">Wearable Devices</a>
+                            <a href="#">Automobiles & Motorcycles</a>
+                         
+                         </div>
+                         <div>
+                            <a href="#">Sports & Outdoors</a>
+                            <a href="#">Consumer Electronics</a>
+                            <a href="#">TV Boxes & Mini PCs</a>
+                            <a href="#">Toys & Hobbies</a>
+                            <a href="#">Security System</a>
+                            <a href="#">Fashion</a>
+                           
+                           
+                         </div>
+                         
+        
+                    </div>
+                    </div>
+                  </div>
+        
+                  <!-- search_bar -->
+                 
+        
+        
+                  <div>
+                       <input type="text" id="query" placeholder="search by keyboards">
+                  </div>
+                  <div>
+                         <i class="fa-solid fa-magnifying-glass search"></i>
+                  </div>
+        
+                  <a class="decarution" href="SignIn.html">
+                  <div id="user">
+                      <i class="fa-regular fa-user"></i>
+                  
+                    <p>sign in</p>
+                
+                </div></a>
+        
+                <a class="decarution" href="wishlistPage.html">
+                <div id="wish">
+                <i class="fa-regular fa-heart"></i>
+               
+                   
+                   <p >wishlist</p>
+               </div>
+                </a>
+        
+               
+        
+                <a class="decarution" href="shoppingcart.html">
+                <div id="cart">
+                <i  class="fa-solid fa-bag-shopping"></i>
+                <div><p style="font-size:.8rem;" id="show">0</p>
+                    <p>Cart</p>
+                </div>
+            </div></a>
+        
+             
+                  
+            </div>
+        
+        
+            <div id="shop">
+                <div class="dropdown3">
+                    <span style="font-size: 13.5px; margin-left: 3.5rem;">Shop All Categories <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown-content3">
+                    <!-- <p>Local Warehouses</p> -->
+        
+                  <!-- <div id="drp4"> -->
+                    <div class="dropdown4">
+                        <span>Local Warehouses</span>
+                        <div class="dropdown-content4">
+                            <div id="drp4"> 
+                                <div>
+                                    <h4>EU Warehouse</h4>
+                                <p class="fade">EU Deals</p>
+                                <h4>DE Warehouse</h4>
+                                <p class="fade">DE Deals</p>
+                                <h4>PL Warehouse</h4>
+                                <h4>ES Warehouse</h4>
+                                <p class="fade">EU Deals</p>
+                                <h4>EU Warehouse</h4>
+                                <p class="fade">ES Deals</p>
+            
+                                <h4>CZ Warehouse</h4>
+                              
+                                <h4>UK Warehouse</h4>
+                                
+                                <h4>EU-3 Warehouse</h4>
+                                </div>
+                                <div>
+                                    <img id="map" src="https://img.gkbcdn.com/s3/cim/category-1301-6ETJOmbg.png" alt="">
+                                </div>
+                            </div>
+                     
+                       
+                      
+                        </div>
+                    
+                      </div>
+                      
+                  <!-- </div> -->
+        
+        
+                    <p>Smart Home & Garden</p>
+                    <p>Sports & Outdoors</p>
+                    <p>Consumer Electronics</p>
+                    <p>TV Boxes & Mini PCs</p>
+                    <p>Computers, Tablets & Accessories</p>
+                    <p>Toys & Hobbies</p>
+                    <p>Phones & Accessories</p>
+                    <p>Automobiles & Motorcycles</p>
+                    <p>Wearable Devices</p>
+                    <p>Security Systems</p>
+                    <p>Fashion</p>
+                    </div>
+             
+                  
+                  </div>
+                  <div>
+                    <div id="new">
+                        <a href="new.html">New</a>
+                    <a href="top-seller.html">Top seller</a>
+                    <a href="https://www.geekbuying.com/top_brand_at_geekbuying/">Brand</a>
+                    <a href="#">Clearance</a>
+                    <a href="#">Deals</a>
+                    <a href="#"> Bargain</a>
+                    <a href="coupon.html">Coupon</a>
+                  </div>
+                  </div>
+            </div>
+        
+        </div>
+            
+        </div>
       <div id="first">
          <h2>Bestselling</h2>
+         
      </div>
+    
       <div id="filter">
+         
       <nav id="filter1" class="sidebar">
          <!-- <div class="text">
             Side Menu
@@ -88,21 +558,45 @@
            
          </ul>
       </nav>
+      
       <div id="filter2">
+         
          <div id="filter11">
+
            <div id="day">
-            <p class="p1">New Arrived :
+            <p class="p55">New Arrived :
             </p>
-            <div><p class="p2">7 days </p></div>
-            <div><p class="p2">15 days </p></div>
-            <div><p class="p2">30 Days</p></div>  
+            <div><p class="p22">7 days </p></div>
+            <div><p class="p22">15 days </p></div>
+            <div><p class="p22">30 Days</p></div>  
            </div>
             <div id="opt">
-               <p class="p1">Filter :</p>
+               <p class="p55">Filter :
+               </p>
+               <div id="kypn">
+                  <select name="" id="">
+                     <option value="">Ship From</option>
+                     <option value=""> Netherland</option>
+                     <option value="">Europe</option>
+                     <option value="">Poland</option>
+                     <option value="">Germany</option>
+                     <option value="">spain</option>
+                     <option value="">United State</option>
+                     <option value="">United kingdom</option>
+                     <option value="">China</option>
+                     <option value="">Hong Kong</option>
+                     <option value="">Canada</option>
+                     <option value="">Japan</option>
+                  </select>
+                    
+               </div>
+
+               
+              
               <div class="sale"><p><span><i style="font-size: 1.5rem;" class="fa-light fa-stop"></i></span> On Sale</p></div>
               <div class="sale1"><p><span><i style="font-size: 1.5rem;" class="fa-light fa-stop"></i></span>Free Shipping only </p></div>
-              <p id="dash">Price :</p>
-              <form>
+              <p id="dash" style="margin-top: .6rem;">Price :</p>
+              <form style="margin-top:.5rem; margin-left: .5rem;">
                  <input  type="number" placeholder="Min">
                  <p style="margin-top: .3rem; margin-right: .4rem;">-</p>
                  <input type="number" placeholder="Max">
@@ -110,8 +604,9 @@
               </form>
 
             </div>    
+            
             <div id="sort">
-               <p class="p1">Sort By : </p>
+               <p class="p55">Sort By : </p>
                <div>
                <button id="btn12" onclick="sort1()"><a href="new.html" >Best Match</a></button>
                <button id="btn12" onclick="sort2()"><a href="new.html" >New Arrival</a></button>
@@ -125,6 +620,7 @@
          </div>
       </div>
    </div>
+   
    <div id="mulopt">
      <input type="text" placeholder="<">
      <input style="background-color: blue; border: none;" type="text" placeholder="1">
@@ -136,32 +632,113 @@
 
    </div>
    <h3 class="h33">Recommendation For You</h3>
-    <div class="slideshow-container" id="slideshow-container">
+    <div class="slideshow-container11" id="slideshow-container11">
       
     </div>
     <div id="arrow"><a class="prev" id="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" id="next" onclick="plusSlides(1)">❯</a></div>
+      <a class="next" id="next" onclick="plusSlides(1)">❯</a>
+   </div>
 
-      <div id="slider53">
-         <!-- <button class="btn">Ship From</button> -->
-            <div class="dropdown">
-            <button class="btn" > Ship From
-            <i id="fa" class="fa fa-caret-down"></i>
-             </button>
-             <div class="dropdown-content">
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2103/20210311151004363.jpg" alt=""> Netherland</a>
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2003/20200305162126197.jpg" alt=""> Europe</a>
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2008/20200807180128517.jpg" alt=""> Poland</a>
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2007/20200717102719551.jpg" alt=""> Germany</a>
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2110/20211021113310180.jpg" alt=""> spain</a>
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/i/1910/20191018175843539.jpg" alt=""> United State</a>
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2007/20200708114532816.jpg" alt=""> United kingdom</a>
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/i/1811/20181110111603672.jpg" alt=""> China</a>
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/i/1811/20181110111507664.jpg" alt=""> Hong Kong</a>
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/w/2202/20220215165710405.jpg" alt=""> Canada</a>
-            <a href="#"><img id="photo" src="https://img.gkbcdn.com/s3/i/1910/20191018175420531.jpg" alt=""> Japan</a>
-            </div>
+      
+   
+
+   <div id="footer">
+      <div id="marginleft">
+          <input id="scribe" type="text" placeholder="Enter email to get 5% off coupon ">
+          <!-- <input type="Suscribe"> -->
+           <button id="scribe_btn">Suscribe</button>
+           <div id="geek_buying">
+              <h4>About Geekbuying</h4>
+              <p id="text">We at Geekbuying are all about making our customers' lives comfortable and smarter. We have a massive selection of products and offer unbeatable prices. If you are looking for the latest and the greatest product in categories like smart home and outdoor gadgets, Geekbuying is where you should be!
+  
+                  Geekbuying is the ultimate shopping hub for new releases covering smart home products like vacuum cleaners, fitness equipment like treadmills, top of the line home and office furniture, outdoor items including e-bikes, scooters, and other consumer goods like TV boxes, RC Toys and so much more! Shop for your favorite brands and products today!</p>
+           </div>
+  
       </div>
+  
+      <div>
+  
+          <div id="social">
+              <div class="social_gap"> 
+                   <div>
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-youtube"></i>
+                      <i class="fa-brands fa-rocketchat"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-twitter-square"></i>
+                      <i class="fa-brands fa-blogger-b"></i>
+                   </div>
+                
+              </div>
+  
+  
+              <div class="social_gap">
+                  <i class="fa-regular fa-mobile"></i>
+                  <!-- <p>Mobile</p> -->
+                  <i class="fa-brands fa-android"></i>
+                  <!-- <p>Android</p> -->
+                  <i class="fa-brands fa-apple"></i>
+                  <!-- <p>iOS</p> -->
+  
+                  
+              </div>
+              
+          </div>
+  
+  
+       <div id="help">
+           <div>
+              <h4>Help </h4>
+              <p>Order status</p>
+              <p>About us</p>
+              <p>Contact us</p>
+              <p>Warranty</p>
+              <p>FAQs</p>
+              <p>Sitemap</p>
+           </div>
+           <div>
+               <h4>Support</h4>
+               <p>Payment information</p>
+               <p>Shipping guide</p>
+               <p>Wholesale</p>
+               <p>Affiliates</p>
+           </div>
+           <div>
+               <h4>Policies</h4>
+               <p>Terms & conditions</p>
+               <p>Return policy</p>
+               <p>Privacy</p>
+               <p>Declaration</p>
+               <p>Customs</p>
+           </div>
+       </div>
+  
+      </div>
+      
+  </div>
+  <h4 id="peo">Popular Searches</h4>
+  <div id="peopler_search">
+    <button>Geekbuying Coupon</button>
+    <button>Roborock Q7 Max</button>
+    <button>Tronsmart Bluetooth Speakers</button>
+    <button>Windows Mini PC</button>
+    <button>android tv boxes</button>
+    <button> LDS Robot Vacuum</button>
+    <button>Electric Bike</button>
+    <button style="margin-top: .5rem;">OnexPlayer mini AMD</button>
+  
+      
+  </div>
+  
+  <div id="lang">
+      <p>| English | Español | Français | Deutsch | Italiano | Português | Nederlands | Polski | Русский | Türkçe | ελληνικά | Magyar | لعربي | עברית | ไทย  日本語 |</p>
+  </div>
+  <hr>
+  
+  <div id="pay"><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/footicons.jpg?v=20220427" 
+      alt=""> </div>
+
    </body>
+   
 </html>
-<script src="./Scripts/top-seller.js"></script>
+<script src="./Scripts/top-seller.js" ></script>
