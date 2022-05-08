@@ -439,6 +439,7 @@ function imageclick(el){
   alert("Item Successfully Added To Your Cart")
   newData.push(el);
   localStorage.setItem("cart",JSON.stringify(newData))
+  window.location.href='add_to_cart.html'
 }
 
 function  btnwish(el){
