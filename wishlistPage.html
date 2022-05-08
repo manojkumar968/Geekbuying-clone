@@ -19,7 +19,7 @@
             /* border: 1px solid brown; */
             /* justify-content: center; */
             margin-top: 40px;
-            padding: 40px;
+            /* padding: 40px; */
         }
         #midLefDiv{
             width: 20%;
@@ -582,6 +582,9 @@ hr{
      margin-left: .75rem;
      font-size: .85rem;
   }
+  .TextColorBlack{
+      color: black;
+  }
 
 /* FOOTER CSS ENDS HERE */
     </style>
@@ -604,22 +607,28 @@ hr{
         <img src="./Images/logogeek.PNG" alt="">
         <input type="text" placeholder="All categories  ▼  |      Search by Keywords"  >
         <img src="./Images/search.PNG" alt="">
-        <i onclick="signinfun()" class="fa-solid fa-user-large"></i>
-        <p onclick="signinfun()">Sign In</p>
-        <i onclick="wishlistfun()" class="fa-solid fa-heart"></i>
-        <p onclick="wishlistfun()">Wishlist</p>
-        <i onclick="cartfun()" class="fa-solid fa-cart-shopping cartblack"></i>
-        <p onclick="cartfun()" >Cart</p>
+        <i class="fa-solid fa-user-large"></i>
+        <a class="underlineRemove TextColorBlack" href="./SignIn.html">
+            <p >Sign In</p>
+        </a>
+        <i  class="fa-solid fa-heart"></i>
+        <a class="underlineRemove TextColorBlack" href="./wishlistPage.html">
+            <p >Wishlist</p>
+        </a>
+        <i  class="fa-solid fa-cart-shopping cartblack"></i>
+        <a class="underlineRemove TextColorBlack" href="./checkout.html"><p onclick="cartfun()" >Cart</p></a>
     </div>
     <div id="rect4">
         <p>Shop All Categories ▼</p>
-        <p>New</p>
-        <p>Top Seller</p>
+        <a class="underlineRemove TextColorBlack" href="./new.html">
+            <p>New</p>
+        </a>
+        <a class="underlineRemove TextColorBlack" href="./top-seller.html"><p>Top Seller</p></a>
         <p>Brand</p>
         <p>Clearance</p>
         <p>Deals</p>
         <p>Bargain</p>
-        <p>Coupon</p>
+        <a class="underlineRemove TextColorBlack" href="./coupon.html"><p>Coupon</p></a>
     </div>
     <hr>
 
@@ -639,7 +648,7 @@ hr{
                 </Div>
                 <Div class="dForProfileEdit">
                     <i class="fa-solid fa-pencil"></i>
-                    <a class="editProfileText" href="#">Edit profile</a>
+                    <a class="editProfileText" href="./profilePage.html">Edit profile</a>
                 </Div>
                 <Div class="dForLiveChat border">
                     <button class="btnLiveChat border">Live Chat</button>
@@ -756,29 +765,46 @@ hr{
 <script>
     // console.log('a')
 
-    var inputdata = [
-        {
-            price: "603.00",
-            discount: "10% off",
-            productname: "Faces Canada Peaches N Cream Tinted Moisturizer - Light 01",
-            producturl: "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/4/54_2.jpg",
-            strickedoff: "₹599.00"
-        },
-    ]
+  
+    // var inputdata = [
+    //     {
+    //         price: "603.00",
+    //         discount: "10% off",
+    //         productname: "Faces Canada Peaches N Cream Tinted Moisturizer - Light 01",
+    //         producturl: "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/4/54_2.jpg",
+    //         strickedoff: "₹599.00"
+    //     },
+    // ]
 
 
 
 
-    function print(inputdata) {
+
+    function print(wishData) {
 
 
-        console.log('a')
+        // console.log('a')
         var div_productDetailMainBox = document.querySelector('.productDetailMainBox')
         div_productDetailMainBox.innerText = '';
 
-        inputdata.map(function (e) {
+        wishData.map(function (e, i, arr) {
 
             //                        product image hove sale tag create and ancher tag created start
+
+
+            let { image_url, name, price, strikedoffprice } = e
+
+            let rupRemoveCurrentPrice = price.split('')
+            rupRemoveCurrentPrice.splice(0, 1)
+            let afterCurrentPri = rupRemoveCurrentPrice.join('')
+
+            let rupRemoveStricOffPrice = strikedoffprice.split('')
+            rupRemoveStricOffPrice.splice(0, 1)
+            let afterStrickPri = rupRemoveStricOffPrice.join('')
+
+            let discount = Math.floor(100 - ((Number(afterCurrentPri) * 100) / Number(afterStrickPri)))
+
+            // console.log(discount)
 
 
             var div_productDetailMainBox = document.querySelector('.productDetailMainBox')
@@ -806,7 +832,7 @@ hr{
 
             var img_productImg = document.createElement('img')
             img_productImg.setAttribute('class', 'productImg')
-            img_productImg.src = e.producturl
+            img_productImg.src = image_url[0];
 
             div_imgHoverSale.append(img_productImg);
 
@@ -835,8 +861,8 @@ hr{
             var div_saleDiv = document.createElement('div')
             div_saleDiv.setAttribute('id', 'saleDiv')
             var p_sale = document.createElement('p')
-            p_sale.setAttribute('class','pSale')
-            p_sale.innerText = '15% OFF'
+            p_sale.setAttribute('class', 'pSale')
+            p_sale.innerText = `${discount}% OFF`;
 
             div_saleDiv.append(p_sale)
 
@@ -863,7 +889,7 @@ hr{
             div_productDetail.append(div_productName)
 
             var p_product_name = document.createElement('p')
-            p_product_name.innerText = e.productname;
+            p_product_name.innerText = name;
 
             div_productName.append(p_product_name)
 
@@ -908,19 +934,19 @@ hr{
             div_price.append(div_offprice)
 
             var s_for_offprice = document.createElement('s')
-            s_for_offprice.innerText = e.strickedoff;
+            s_for_offprice.innerText = strikedoffprice;
 
             div_offprice.append(s_for_offprice)
 
             var div_currentprice = document.createElement('div')
             div_currentprice.setAttribute('class', 'currentprice')
-            div_currentprice.innerText = e.price;
+            div_currentprice.innerText = price;
 
             div_price.append(div_currentprice)
 
             var div_discount = document.createElement('div')
             div_discount.setAttribute('class', 'discount')
-            div_discount.innerText = e.discount;
+            div_discount.innerText = `${discount}% OFF`;
 
             div_price.append(div_discount)
 
@@ -934,6 +960,10 @@ hr{
             //                                                          BUTTON FOR ADD TO CART  START 
             var button_cartbutton = document.createElement('button')
             button_cartbutton.setAttribute('class', 'cartbutton')
+
+            button_cartbutton.addEventListener('click', function () {
+                storeDataForMainCart(e)
+            })
             //                                                          BUTTON FOR ADD TO CART END
 
 
@@ -972,6 +1002,10 @@ hr{
             //                                                               BUTTON FOR delet START
             var button_addToFevBut = document.createElement('button')
             button_addToFevBut.setAttribute('class', 'addToFevBut')
+
+            button_addToFevBut.addEventListener('click', function () {
+                deletData(i, arr)
+            })
             //                                                              BUTTON FOR delet END
 
 
@@ -994,21 +1028,51 @@ hr{
 
 
 
+    let wishDataFormLoc = JSON.parse(localStorage.getItem('wish')) || []
+    print(wishDataFormLoc);
+    // console.log(print)
 
-    print(inputdata);
-    console.log(print)
 
 
-    function cartfun(){
-        window.location.href="shoppingcart.html"
+
+
+    //                                                 function For delet data
+
+    let deletData = (i, arr) => {
+        arr.splice(i, 1)
+        localStorage.setItem('wish', JSON.stringify(arr))
+
+        let wishDataFormLoc = JSON.parse(localStorage.getItem('wish')) || []
+        print(wishDataFormLoc);
+
     }
 
-    function signinfun(){
-        window.location.href="signin.html"
-    }
 
-    function wishlistfun(){
-        window.location.href="wishlistPage.html"
+
+    //                                              function for store data for main cart
+
+
+    let storeDataForMainCart = (e) => {
+        // console.log(e)
+
+        let { price, name, image_url, strikedoffprice } = e
+
+        let dataForMainCart = JSON.parse(localStorage.getItem("cartData")) || [];
+
+        let rupRemoveCurrentPrice = price.split('')
+        rupRemoveCurrentPrice.splice(0, 1)
+        let afterCurrentPri = rupRemoveCurrentPrice.join('')
+
+        let obj = {
+            price: afterCurrentPri,
+            qty: 1,
+            productname: name,
+            producturl: image_url,
+
+        }
+        dataForMainCart.push(obj)
+        localStorage.setItem('cartData', JSON.stringify(dataForMainCart))
+        alert('Item Successfully Added To Your Cart')
     }
 
 </script>
