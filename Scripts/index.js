@@ -19,109 +19,113 @@ function myFunction() {
 
 
 
-  function home(){
-    window.location.href="index.html"
-}
+//   function home(){
+//     window.location.href="index.html"
+// }
+// onclick="logFun()"
+// function logFun(){
+//     window.location.href="SignIn.html"
+// }
 
 
 
 
-let gE = (sel) => {
-  return document.querySelector(sel)
-}
+// let gE = (sel) => {
+//   return document.querySelector(sel)
+// }
 
-let dayarr = [5];
-let hrarr = [0];
-let minarr = [23];
-let secarr = [24];
+// let dayarr = [5];
+// let hrarr = [0];
+// let minarr = [23];
+// let secarr = [24];
 
-let timer = () => {
+// let timer = () => {
 
-  let id = setInterval(() => {
-      secarr[0] -= 1;
+//   let id = setInterval(() => {
+//       secarr[0] -= 1;
 
-      secarr[0]=secarr[0]-1;
-      // console.log(sec)
+//       secarr[0]=secarr[0]-1;
+//       // console.log(sec)
 
-      if (secarr[0] == 0) {
-          if (minarr[0] >= 1) {
-              minarr[0] -= 1;
-              secarr[0] = 59;
-          }
+//       if (secarr[0] == 0) {
+//           if (minarr[0] >= 1) {
+//               minarr[0] -= 1;
+//               secarr[0] = 59;
+//           }
 
-      }
+//       }
 
-      if (minarr[0] == 0) {
-          if (hrarr[0] >= 1) {
-              hrarr[0] -= 1;
-              minarr[0] = 59;
-          }
-
-
-      }
-      if (hrarr[0] == 0) {
-          if (dayarr[0] >= 1) {
-              dayarr[0] -= 1;
-              hrarr[0] = 23;
-          }
-
-      }
-
-      if (dayarr[0] == 0 && hrarr[0] == 0 && minarr[0] == 0 && secarr[0] == 0) {
-          clearInterval(id)
-      }
-
-      let day = dayarr[0];
-
-      let hr;
-      if (hrarr[0] < 10) {
-          hr = '0' + hrarr[0]
-      }
-      else {
-          hr = hrarr[0]
-      }
-
-      let min;
-      if (minarr[0] < 10) {
-          min = '0' + minarr[0]
-      }
-      else {
-          min = minarr[0]
-      }
+//       if (minarr[0] == 0) {
+//           if (hrarr[0] >= 1) {
+//               hrarr[0] -= 1;
+//               minarr[0] = 59;
+//           }
 
 
-      let sec;
-      if (secarr[0] < 10) {
-          sec = '0' + secarr[0]
-      }
-      else {
-          sec = secarr[0]
-      }
-      // console.log(sec)
+//       }
+//       if (hrarr[0] == 0) {
+//           if (dayarr[0] >= 1) {
+//               dayarr[0] -= 1;
+//               hrarr[0] = 23;
+//           }
 
-      let days = gE('.dayCount')
-      days.innerHTML = day;
+//       }
 
-      let hour = gE('.hourCount')
-      hour.innerHTML = hr;
+//       if (dayarr[0] == 0 && hrarr[0] == 0 && minarr[0] == 0 && secarr[0] == 0) {
+//           clearInterval(id)
+//       }
 
-      let mintue = gE('.mintueCount')
-      mintue.innerHTML = min;
+//       let day = dayarr[0];
 
-      let second = gE('.secondCount')
-      second.innerHTML = sec;
+//       let hr;
+//       if (hrarr[0] < 10) {
+//           hr = '0' + hrarr[0]
+//       }
+//       else {
+//           hr = hrarr[0]
+//       }
+
+//       let min;
+//       if (minarr[0] < 10) {
+//           min = '0' + minarr[0]
+//       }
+//       else {
+//           min = minarr[0]
+//       }
+
+
+//       let sec;
+//       if (secarr[0] < 10) {
+//           sec = '0' + secarr[0]
+//       }
+//       else {
+//           sec = secarr[0]
+//       }
+//       // console.log(sec)
+
+//       let days = gE('.dayCount')
+//       days.innerHTML = day;
+
+//       let hour = gE('.hourCount')
+//       hour.innerHTML = hr;
+
+//       let mintue = gE('.mintueCount')
+//       mintue.innerHTML = min;
+
+//       let second = gE('.secondCount')
+//       second.innerHTML = sec;
 
 
 
-      // console.log('day:', day, 'hr:', hr, 'min:', min, 'sec:', sec)
+//       // console.log('day:', day, 'hr:', hr, 'min:', min, 'sec:', sec)
 
 
-  }, 1000)
+//   }, 1000)
 
 
-}
+// }
 
-timer()
+// timer()
 
 
 

@@ -16,7 +16,11 @@ function mylogin(){
     }
     else
     {
-        alert("Login Failed!");
+        
     }
+    
 }
-// if(userinputData.email == )
+
+function createfun(){
+    window.location.href="SignUp.html";
+}
