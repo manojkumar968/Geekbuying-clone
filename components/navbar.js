@@ -210,7 +210,7 @@ let navbar=()=>{
         <i class="fa-regular fa-heart"></i>
        
            
-           <p>wishlist</p>
+           <p class='totalItemInWish'>wishlist</p>
        </div>
         </a>
 
@@ -219,8 +219,8 @@ let navbar=()=>{
         <a class="decarution" href="shoppingcart.html">
         <div id="cart">
         <i  class="fa-solid fa-bag-shopping"></i>
-        <div><p id="show" >0</p>
-            <p>Cart</p>
+        <div><p id="show" class'totalItemInCart'>0</p>
+            <p >Cart</p>
         </div>
     </div></a>
 

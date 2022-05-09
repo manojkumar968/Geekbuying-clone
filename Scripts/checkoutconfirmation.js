@@ -1,28 +1,28 @@
-var cartData = [
-    {
-    qty: 3,
-    price: 603.00,
-    discount: "",
-    productname: "Waterproof Handlebar Bag Folding Storage Pack for Electric Scooter Bicycle",
-    producturl: "https://img.gkbcdn.com/p/2019-06-14/scooter-front-tube-bag-tools-storage-for-xiaomi-mijia-m365-black-1574132871919._w280_.jpg",
-    strickedoff:"" },
-    {
-    price:782.00,
-    qty:2,
-    discount: "",
-    productname: "Stunt Scooter with Aluminium Handlebar with disc brakes Black",
-    producturl: "https://img.gkbcdn.com/p/2021-08-26/janobike-t10-folding-electric-scooter-23ah-1000w-x2-motor-black-1629949298856._w280_.jpg",
-    strickedoff:"" },
-    {
-    price: "1373",
-    qty:2,
-    discount: "",
-    productname: "Portable Quick-drying  Superfine Fiber With Silicone Sleeve For Travel Outdoor-Gray",
-    producturl: "https://img.gkbcdn.com/p/2020-05-07/30-x-100cm-Portable-Quick-drying-Cooling-Towel-Gray-903740-._w280_.jpg",
-    strickedoff:"",}
-    ];
+// var cartData = [
+//     {
+//     qty: 3,
+//     price: 603.00,
+//     discount: "",
+//     productname: "Waterproof Handlebar Bag Folding Storage Pack for Electric Scooter Bicycle",
+//     producturl: "https://img.gkbcdn.com/p/2019-06-14/scooter-front-tube-bag-tools-storage-for-xiaomi-mijia-m365-black-1574132871919._w280_.jpg",
+//     strickedoff:"" },
+//     {
+//     price:782.00,
+//     qty:2,
+//     discount: "",
+//     productname: "Stunt Scooter with Aluminium Handlebar with disc brakes Black",
+//     producturl: "https://img.gkbcdn.com/p/2021-08-26/janobike-t10-folding-electric-scooter-23ah-1000w-x2-motor-black-1629949298856._w280_.jpg",
+//     strickedoff:"" },
+//     {
+//     price: "1373",
+//     qty:2,
+//     discount: "",
+//     productname: "Portable Quick-drying  Superfine Fiber With Silicone Sleeve For Travel Outdoor-Gray",
+//     producturl: "https://img.gkbcdn.com/p/2020-05-07/30-x-100cm-Portable-Quick-drying-Cooling-Towel-Gray-903740-._w280_.jpg",
+//     strickedoff:"",}
+//     ];
 
-localStorage.setItem("cartData",JSON.stringify(cartData));
+// localStorage.setItem("cartData",JSON.stringify(cartData));
 
 
 

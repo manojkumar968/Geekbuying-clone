@@ -178,22 +178,68 @@ var robData=[
     
     function imageclick(el){
         var robData =  [];
-      alert("Item Successfully Added To Your Cart")
+    //   alert("Item Successfully Added To Your Cart")
       robData.push(el);
       localStorage.setItem("cart",JSON.stringify(robData))
      window.location.href="../add_to_cart.html";
     }
     
-    
+    // let wishDataFetch=JSON.parse(localStorage.getItem('wish'))
     function addToCart(el) {
-        let arr=[]
+        let arr=JSON.parse(localStorage.getItem('wish'))
         console.log('el',el);
         // robotData.push(el);
         arr.push(el)
         localStorage.setItem("wish", JSON.stringify(arr));
-        window.location.href="../add_to_cart.html";
+        // window.location.href="../add_to_cart.html";
+        totalItemInWishFun();
+        alert("Item Successfully Added To Your wish")
         
       }
+
+
+
+      let totalItemInCartFun=()=>{
+        let totalItemIncart=document.querySelector('.totalItemInCart')
+
+        let cartItem=JSON.parse(localStorage.getItem('cartData'))
+
+        console.log(cartItem)
+        totalItemIncart.innerHTML=cartItem.length;
+
+        totalItemIncart.style.backgroundColor='yellow'
+
+        totalItemIncart.style.color='red'
+
+        totalItemIncart.style.fontWeight='bold'
+        
+
+
+    }
+
+    totalItemInCartFun();
+
+
+
+
+    let totalItemInWishFun=()=>{
+        let totalItemInWish=document.querySelector('.totalItemInWish')
+
+        let wishItem=JSON.parse(localStorage.getItem('wish'))
+
+        totalItemInWish.innerHTML=wishItem.length;
+
+        totalItemInWish.style.backgroundColor='yellow'
+
+        totalItemInWish.style.color='red'
+
+        totalItemInWish.style.fontWeight='bold'
+        
+
+
+    }
+
+    totalItemInWishFun();
     
     
     

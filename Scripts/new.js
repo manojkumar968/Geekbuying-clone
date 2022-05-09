@@ -436,7 +436,7 @@ cartData.map(function(el){
 
 function imageclick(el){
     var newData =  [];
-  alert("Item Successfully Added To Your Cart")
+//   alert("Item Successfully Added To Your Cart")
   newData.push(el);
   localStorage.setItem("cart",JSON.stringify(newData))
   window.location.href='add_to_cart.html'
@@ -447,6 +447,8 @@ function  btnwish(el){
         wishData.push(el);
         console.log(wishData)
         localStorage.setItem("wish",JSON.stringify(wishData));
+        totalItemInWishFun();
+        alert("Item Successfully Added To Your wish")
 }
 
 
@@ -478,3 +480,46 @@ cartData.map(function(el){
 
   document.querySelector("#slideshow-container11").append(div);
 });
+
+
+
+let totalItemInWishFun=()=>{
+    let totalItemInWish=document.querySelector('.totalItemInWish')
+
+    let wishItem=JSON.parse(localStorage.getItem('wish'))
+
+    totalItemInWish.innerHTML=wishItem.length;
+
+    totalItemInWish.style.backgroundColor='yellow'
+
+    totalItemInWish.style.color='red'
+
+    totalItemInWish.style.fontWeight='bold'
+    
+
+
+}
+
+totalItemInWishFun();
+
+
+
+let totalItemInCartFun=()=>{
+    let totalItemIncart=document.querySelector('.totalItemInCart')
+
+    let cartItem=JSON.parse(localStorage.getItem('cartData'))
+
+    console.log(cartItem)
+    totalItemIncart.innerHTML=cartItem.length;
+
+    totalItemIncart.style.backgroundColor='yellow'
+
+    totalItemIncart.style.color='red'
+
+    totalItemIncart.style.fontWeight='bold'
+    
+
+
+}
+
+totalItemInCartFun();

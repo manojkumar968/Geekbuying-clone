@@ -12,7 +12,7 @@ products = [
         name: "SYL-08 V3 Version Electric Off Road Skateboard",
         price: "39260.26" ,
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 49468.14 ,
+        strikedoffprice : '₹49468.14',
         brand: "ENGWE",
     },
     {
@@ -24,7 +24,7 @@ products = [
         "https://img.gkbcdn.com/p/2019-08-20/samebike-20lvxd30-folding-electric-moped-bike-black-1574132172808._w500_p1_.jpg",] ,
         name: "Eleglide S1 Folding Elec Pneumatic Tires",
         price: "24341.07" ,
-        strikedoffprice : 36119.38 ,
+        strikedoffprice : '₹36119.38' ,
         brand: "Eliglide",
     },
     {
@@ -37,7 +37,7 @@ products = [
        name: "ENGWE EP-2 Pro 750W 20 inch Fat Tire Electric Folding",
        price: "83814.49",
        ratings: "⭐️⭐️⭐️⭐️",
-       strikedoffprice : 117782.36,
+       strikedoffprice : '₹117782.36',
        brand: "ENGWE",
    },
     {
@@ -45,7 +45,7 @@ products = [
         name: "ENNGWE EP-2 Pro 750W 20 inch Fat Tire Electric Folding",
         price: "83814.49",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 117782.36,
+        strikedoffprice : '₹117782.36',
         brand: "ENGWE",
     },
 
@@ -55,7 +55,7 @@ products = [
         name: "KUGOO S1 Folding Electric Scooter 350W Motor LCD",
         price: "25126.29",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 31408.05,
+        strikedoffprice : '₹31408.05',
         brand: "ENGWE",
     },
     { 
@@ -64,7 +64,7 @@ products = [
            name: "kingSmith WalkingPad R1 Pro Tredmill 2 in 1 smart Folding" ,
            price: "38475.04",
            ratings: "⭐️⭐️⭐️⭐️",
-           strikedoffprice : 62816.89 ,
+           strikedoffprice : '₹62816.89' ,
            brand: "Eliglide",
        },
     {
@@ -72,7 +72,7 @@ products = [
         name: "Ninebot KickScooter Max G30 G30P Portable Folding Electric",
         price: "54964.68",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 67528.22,
+        strikedoffprice : '₹67528.22',
         brand: "ENGWE",
     },
     {
@@ -80,7 +80,7 @@ products = [
         name: "Front Tube Bag Large Capacity Tools Storage",
         price: "1726.70",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 67528.22,
+        strikedoffprice : '₹67528.22',
         brand: "ADO" ,
     },
     {
@@ -88,7 +88,7 @@ products = [
         name: "BOGIST C1 PRO Folding Electric 10 Tire 500W",
         price: "45542.03",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 59676.01,
+        strikedoffprice : '₹59676.01',
         brand: "ADO" ,
     },
     {
@@ -96,7 +96,7 @@ products = [
         name: "ADO A20 Electric folding Bike 20 inch City Bicycle",
         price: "65957.78",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 117782.36,
+        strikedoffprice : '₹117782.36',
         brand: "ADO" ,
     },
     {
@@ -104,7 +104,7 @@ products = [
         name: "ENGWE EP-2 Pro 750W 20 inch Fat Tire Electric Folding",
         price: "83814.49",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 117782.36,
+        strikedoffprice : '₹117782.36',
         brand: "ENGWE",
     },
     {
@@ -112,7 +112,7 @@ products = [
         name: "HIIMO Z20 Folding Electric Bicycle 20 Inch Tire 250W DC",
         price: "65643.69",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 84247.93,
+        strikedoffprice : '₹84247.93',
         brand: "HIMO",
     },
     {
@@ -120,7 +120,7 @@ products = [
         name: "HIIMO Z20 Folding Electric Bicycle 20 Inch Tire 250W DC",
         price: "65643.69",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 84247.93,
+        strikedoffprice : '₹84247.93',
         brand: "HIMO",
     },
     {
@@ -128,7 +128,7 @@ products = [
         name: "ENGWE EP-2 pro 750W 20 inch Fat tire Electric",
         price: "83814.49",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 117782.36,
+        strikedoffprice : '₹117782.36',
         brand: "ENGWE",
     },
     {
@@ -136,7 +136,7 @@ products = [
         name: "ADO A20 Electric Folding Bike 20 iinch Bicycle 350W",
         price: "65957.78",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 117782.36,
+        strikedoffprice : '₹117782.36',
         brand: "ADO",
     },
     {
@@ -144,7 +144,7 @@ products = [
         name: "Eleglide D1 off-road Folding Electric Scooter 10",
         price: "53348.70",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 62820.04,
+        strikedoffprice : '₹62820.04',
         brand: "Eliglide",
     },
     {
@@ -152,7 +152,7 @@ products = [
         name: "Inner Tube For KUDGOO KIRIN M4 Pro Electric",
         price: "53348.70",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 3000.23,
+        strikedoffprice : '₹3000.23',
         brand: "ADO",
 
     },
@@ -161,7 +161,7 @@ products = [
         name: "Xiaomi HIMO C20 Electric Moped BIcycle 250W Motor",
         price: "53394.24",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 78521.31,
+        strikedoffprice : '₹78521.31',
         brand: "HIMO",
     },
     {
@@ -169,7 +169,7 @@ products = [
         name: "FIIDO d11 Folding Electric Moped Bicycle 20 inches Tire",
         price: "78521.31",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : 102077.94,
+        strikedoffprice : '₹102077.94',
         brand: "FIIDO",
     },
     {
@@ -177,7 +177,7 @@ products = [
         name: "NAVEE N65 10-inch Folding Electric Scooter 500W motor",
         price: "57346.26",
         ratings: "⭐️⭐️⭐️⭐️",
-        strikedoffprice : "78521.31",
+        strikedoffprice : "₹78521.31",
         brand: "NAVEE",
     },
    
@@ -287,16 +287,32 @@ document.querySelector(".box3").append(div);
 
 }
 function gotoCart(data){
-    console.log(data);
- localStorage.setItem("cart",JSON.stringify(data));
+    console.log('data', typeof data);
+
+    let{image_url,name,price,strikedoffprice}=data;
+
+    let arr=[];
+    let obj={
+        image_url:image_url,
+        name:name,
+        price:price,
+        strikedoffprice:strikedoffprice
+    }
+
+    arr.push(obj)
+
+ localStorage.setItem("cart",JSON.stringify(arr));
  window.location.href="add_to_cart.html"
 }
 
 function  addtowishlist(data){
+    // let
 console.log(data);
 wishlistArr.push(data);
 
 localStorage.setItem("wish",JSON.stringify( wishlistArr));
+totalItemInWishFun();
+alert("Item Successfully Added To Your wish")
 }
 
 // ------------------------------------------------------ //
@@ -547,3 +563,46 @@ function cartfun(){
     function wishlistfun(){
         window.location.href="wishlistPage.html"
     }
+
+
+
+    let totalItemInCartFun=()=>{
+        let totalItemIncart=document.querySelector('.totalItemInCart')
+
+        let cartItem=JSON.parse(localStorage.getItem('cartData'))
+
+        console.log(cartItem)
+        totalItemIncart.innerHTML=cartItem.length;
+
+        totalItemIncart.style.backgroundColor='yellow'
+
+        totalItemIncart.style.color='red'
+
+        totalItemIncart.style.fontWeight='bold'
+        
+
+
+    }
+
+    totalItemInCartFun();
+
+
+
+    let totalItemInWishFun=()=>{
+        let totalItemInWish=document.querySelector('.totalItemInWish')
+
+        let wishItem=JSON.parse(localStorage.getItem('wish'))
+
+        totalItemInWish.innerHTML=wishItem.length;
+
+        totalItemInWish.style.backgroundColor='yellow'
+
+        totalItemInWish.style.color='red'
+
+        totalItemInWish.style.fontWeight='bold'
+        
+
+
+    }
+
+    totalItemInWishFun();

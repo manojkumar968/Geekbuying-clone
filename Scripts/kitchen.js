@@ -11,7 +11,8 @@ var products=[
       "https://bit.ly/37ZjTo6",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: " $3,999.95",
+    price: " 3,99900.95",
+    strikedoffprice : '₹3999000.36',
     off: "11%",
     info: { reviews: 300, discount: 30, brand: "Zline Kitchen and Bath", availability: true, style: 'Modern & Contemporary' }
   },
@@ -26,7 +27,8 @@ var products=[
       "https://bit.ly/39D9iQ7",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$426.07",
+    price: "42600.07",
+    strikedoffprice : '₹426000.36',
     details:
       " If you want to your beer or soda to have a good taste, 4.5 Cu.Ft. Beverage Refrigerator provides plenty of storage for your favorite snacks and drinks, it's ideal for your entertaining or retail merchandising needs. Unlike many budget beverage refrigerators, the 60 can black frame beverage refrigerator utilizes premium features and design to provide a sleek showcase that will be centerpiece of any space.With its powerful compressor and internal air-cooled system, this beverage refrigerator creates an evenly-cooled space ensuring consistent temperatures throughout the beverage refrigerator.",
     off: "30%",
@@ -43,7 +45,8 @@ var products=[
       "https://bit.ly/3OW30ex",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$1,599.00",
+    price: "1,59900.00",
+    strikedoffprice : '₹159900.36',
     details:
       "Expand your fridge space with this convenient under-counter refrigerator drawer unit from Thor Kitchen. This piece features two large stainless steel drawers with an included stainless steel basket to keep foods organized. This refrigerator is safe for use indoors or outdoors for versatile placement.",
     off: "28%",
@@ -54,7 +57,8 @@ var products=[
     img_url: ["https://img.gkbcdn.com/p/2021-11-16/Proscenic-T22-Oil-Free-Air-Fryer-478408-0._w280_p1_.jpg",],
   
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$8333.25",
+    price: "833300.25",
+    strikedoffprice : '₹8333050.36',
     details:
       "",
     off: "27%",
@@ -71,7 +75,8 @@ var products=[
       "https://bit.ly/3FcGf1i",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$69.99",
+    price: "6900.99",
+    strikedoffprice : '₹69000.36',
     details:
       "Antarctic Star Refrigerator gives you a cool feeling, this compact refrigerator is perfect for dorm rooms, office break rooms, RVs, bars, and other places where space is tight.The appearance is full of fashionable feeling, a refrigerator not only protects and stores food but does so efficiently and affordably. ",
     off: "11%",
@@ -89,7 +94,8 @@ var products=[
       "https://bit.ly/3w6ohJF",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$232.19",
+    price: "23200.19",
+    strikedoffprice : '₹232000.36',
     details:
       "Aluminum cookware crafted to support amazing meals and unforgettable times spent with family and friends. Founded for those who love spending time crafting healthy meals for their kids and high-end courses for friends the Berlinger Haus Aluminum Cookware Set offers the ideal balance of style, versatility, and durable craftsmanship. From our non-stick, triple-coated surfaces to our heat-resistant, soft touch handles, we've thought of everything you'll need to open up your cookbook and try out new recipes. Make cooking fun, enhance the look of your kitchen, and make every meal at home memorable once again. Designed to Fit Your Everyday Life Here at Berlinger Haus we understand that the people using our products are making dinners for their friends and family, which means you want them to fit your cookbook and your lifestyle. That's why we offer our cookware in a variety of vibrant, luxury colors and set variations to support your favorite recipes, holiday gatherings, and special moments spent with those you love. Enjoy cooking with style with a luxury set of Berlinger Haus cookware designed for elegance, versatility, and convenience. Get one today by clicking Add to Cart above and add a touch of class to your kitchen.",
     off: "30%",
@@ -106,7 +112,8 @@ var products=[
       "https://bit.ly/3LIXR7B",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "  $37.99",
+    price: "  3700.99",
+    strikedoffprice : '₹37000.36',
     details:
       "Deco Chef offers a 12-Piece Knife Set to outfit your kitchen with cutlery essentials. Each blade is comprised of high-grade stainless steel that is guaranteed to never rust and to hold its sharp cutting edge longer. Thanks to their high strength, you can confidently tackle each cutting, chopping, slicing, and dicing task with ease. And because they are stainless steel, hand wash cleanup is simple!",
     off: "30%",
@@ -123,7 +130,8 @@ var products=[
       "https://bit.ly/3FuBalr",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$89.99",
+    price: "8900.99",
+    strikedoffprice : '₹89000.36',
     details:
       "The Deco Chef 5.5 QT Kitchen Stand Mixer is a stylish and user-friendly planetary standing mixer that is the perfect complement to the avid baker and cooking enthusiast at home - combine, mix, beat, cream, knead, and whip your favorite deserts and dinner dishes into culinary perfection!",
     off: "17%",
@@ -141,7 +149,8 @@ var products=[
       "https://bit.ly/3kE3uIb",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$109.99",
+    price: "10900.99",
+    strikedoffprice : '₹109000.36',
     details:
       "A sound mixer is a necessary boost for perfect baking treats. This stand mixer works fast and frees your hands to work on other dishes. This HOMCOM electric mixer with versatile mixing heads and speeds is a great assistant when you make cakes, bread, cookies, pastry, muffins, and waffles. The 6QT capacity can serve your whole family in a single batch, and the compact size fits a limited countertop. This electric mixer will be one of the best pieces of equipment in your kitchen.",
     off: "23%",
@@ -159,7 +168,8 @@ var products=[
       "https://bit.ly/3w4xqmb",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$79.49",
+    price: "7900.49",
+    strikedoffprice : '₹79000.36',
     details:
       "Do you love cooking and baking but don't want to spend the money or have the space for all the tools you need? This 5-in-1 hand mixer from HOMCOM has everything you need to be a success in the kitchen. Achieve the consistency you need in your ingredients while saving tons of time with an immersion blender, chopper, whisker, dough kneader, and mixer. The all-in-one-hand blender saves space in your pantry instead of having five different kitchen appliances.",
     off: "37%",
@@ -177,7 +187,8 @@ var products=[
       "https://ak1.ostkcdn.com/images/products/is/images/direct/ab7c9bf62010837315103582967d2d2c196f9ae2/Haden-Heritage-700-Watt-.7-cubic.-foot-Microwave-with-Settings-and-Timer-in-Turquoise-Blue.jpg?impolicy=medium",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$125.29",
+    price: "12500.29",
+    strikedoffprice : '₹125000.36',
     details:
       "Simple yet sophisticated, our Haden Microwave features a .7 cubic foot capacity, 700W power, convenient defrost, reheat, cooking functions, and digital controls for easy use. It's perfect for everyday cooking, defrosting, and reheating. The sleek controls and unique, retro color make it an attractive addition to your countertop. Perfectly matches our Heritage light blue turquoise collection. ",
     off: "14%",
@@ -195,7 +206,8 @@ var products=[
       "https://ak1.ostkcdn.com/images/products/is/images/direct/38613072eb5380a4f704c3d4a3617c94c94d441a/Professional-1.2-Cu.Ft.-Microwave-and-Grill-Oven.jpg?impolicy=medium",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$139.98",
+    price: "13900.98",
+    strikedoffprice : '₹139000.36',
     details:
       "Bring a touch of class into your kitchen with the Farberware 1.2 Cubic Foot 1100 Watt Large Microwave Oven with Grill Function in Stainless Steel. Unique to this model is its dual cooking capabilities. Part grill, part microwave oven, this technology allows you to brown and crisp your food on the outside while maintaining a juicier inside.",
     off: "27%",
@@ -215,7 +227,8 @@ var products=[
       "https://bit.ly/3sxYo4T",
     ],
     ratings: "⭐️⭐️⭐️⭐️⭐️",
-    price: "$1,381.49",
+    price: "1,38100.49",
+    strikedoffprice : '₹1381000.36',
     details:
       "Bring a sense of sophistication to your dining room with this Extendable Solid Rubberwood Dining Table Set. This sturdy table and chairs are crafted with the perfect combination of antique-white finish base and matching wood grain veneer tabletop and chair slat back. You'll love the dining table with a curved-in support leg, which provides more room for people at the table. The solid rubberwood construction is sturdy and more durable than other woods. This matching dining table and chairs are perfect for hosting farm-fresh small family dinners. This table can be extended to seat 6 comfortably or up to 8 for dinner parties and plenty of space for 4 seats for family meals. It's the perfect size for entertaining or everyday use. ",
     off: "35%",
@@ -233,7 +246,8 @@ var products=[
       "https://bit.ly/3KHHlU5",
     ],
     ratings: "⭐️⭐️⭐️⭐️⭐️",
-    price: " $790.19",
+    price: " 79000.19",
+    strikedoffprice : '₹790000.36',
     details:
       "Create a cozy spot in any corner of your kitchen perfect for meals and conversation with this charming nook. This three piece set provides extra storage, space and wonderful function; with seating for five comfortably. Your choice of a classic White or Black finish will bring country manor elegance to your existing home décor.",
     off: "18%",
@@ -252,7 +266,8 @@ var products=[
       "https://bit.ly/38PvoOF",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$359.19",
+    price: "35900.19",
+    strikedoffprice : '₹359000',
     details:
       "Featuring a pristine white shade with a gold-toned finish that elevates the aesthetic appeal of your traditionally styled home, this piece provides ample storage space for your television, electronics, dinnerware, and other essentials. Give your living room a makeover with this sleek Maura buffet from Simple Living.  ",
     off: "25%",
@@ -270,7 +285,8 @@ var products=[
       "https://bit.ly/39qnPOQ",
     ],
     ratings: "⭐️⭐️⭐️⭐️⭐️",
-    price: "$365.99",
+    price: "36500.99",
+    strikedoffprice : '₹365000.36',
     details:
       "Modern elegance has a way of invigorating a space with excitement. This mobile buffet table displays a playful diagonal accent with a practical use as a wine bottle holder. A hanging stemware rack, one dual-side access shelf, two open side shelves, and two cabinet shelves add to the storage capabilities of this buffet.",
     off: "15%",
@@ -288,7 +304,8 @@ var products=[
       "https://bit.ly/3LIxm1X",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: " $303.99",
+    price: " 30300.99",
+    strikedoffprice : '₹303000.36',
     details:
       "Stash your precious chinaware and glassware in this Dawson cabinet. Circular patterns on the front panels add an aesthetic appearance to the light grey, charcoal grey, white or midnight blue finish of this cabinet. Equipped with a top drawer and a roomy lower compartment with an adjustable shelf, this cabinet eases your task of sorting out dining essentials.",
     off: "12%",
@@ -306,7 +323,8 @@ var products=[
       "https://bit.ly/3LHUvS5",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$1,283.99",
+    price: "1,28300.99",
+    strikedoffprice : '₹1283000.36',
     details:
       "Showcasing a tasteful and functional design, this wood buffet with wine rack makes entertaining in a casual space pleasant and easy. From the Darion collection by Furniture of America, this two-tone server is built from wood and wood veneers and given a contrasting dual finish palette of antique white and oak. Storage space in two drawers and four shelves includes a four-shelf wine rack for standard size wine bottles. Louvered style cabinet fronts charm this buffet with a truly in-character rustic country look. Dark metal handles and an oak top surface make the distressed finish of the sideboard take center stage.",
     off: "46%",
@@ -324,7 +342,8 @@ var products=[
       "https://bit.ly/3w2pxh8",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: "$1,076.39",
+    price: "1,07600.39",
+    strikedoffprice : '₹1076000.36',
     details:
       "From the Timm collection of Furniture of America comes this transitional dining server, finished in a distressed antique white tone that lends itself perfectly to a cheery French country home or beachside cottage. Place this elegant furniture piece in your dining room to store your fine dishes, pitchers, and bowls all within reach and tucked inside two spacious drawers and two cabinets. Between the cabinets is a convenient open area with a 12-slot wine bottle storage and three stemware racks that make it easy to slide out a wine glass for company. In addition, this server has round metal hardware and squared turned legs that lend a vintage aesthetic",
     off: "23%",
@@ -342,7 +361,8 @@ var products=[
       "https://bit.ly/3vH69qT",
     ],
     ratings: "⭐️⭐️⭐️⭐️",
-    price: " $349.80",
+    price: " 34900.80",
+    strikedoffprice : '₹34900.36',
     details:
       "The outstanding metal handle is simple and versatile for various home decorations. The buffet cabinet sideboard is carefully crafted from high-quality medium density fiberboard, stable and durable.4-door storage design could be used as a buffet in the kitchen to providing enough storage space. This combination of practical and ornamental design creates a beautiful accent console cabinet that will complement any living room, dining room, or hallway.",
     off: "17%",
@@ -423,17 +443,84 @@ var products=[
   
         }
   function buy(data){
-    console.log(data);
-    // cartarr.push(data);
-    localStorage.setItem("cart",JSON.stringify(data));
-    window.location.href="add_to_cart.html"
+    console.log('data',data);
+    let{img_url,name,price,strikedoffprice}=data;
+
+    console.log('img_url',img_url,name,price,strikedoffprice)
+
+    let arr=[];
+    let obj={
+        image_url:img_url,
+        name:name,
+        price:price,
+        strikedoffprice:strikedoffprice
+    }
+
+    arr.push(obj)
+
+ localStorage.setItem("cart",JSON.stringify(arr));
+ window.location.href="add_to_cart.html"
+    // window.location.href="add_to_cart.html"
   }
   
   function  addtowishlist(data){
     console.log(data);
-    wishlistArr.push(data);
+    let{img_url,name,price,strikedoffprice}=data;
+    let obj={
+        image_url:img_url,
+        name:name,
+        price:price,
+        strikedoffprice:strikedoffprice
+    }
+    wishlistArr.push(obj);
     localStorage.setItem("wish",JSON.stringify( wishlistArr));
+    totalItemInWishFun();
+    alert("Item Successfully Added To Your wish")
     }
   
+
+
+    let totalItemInWishFun=()=>{
+      let totalItemInWish=document.querySelector('.totalItemInWish')
+
+      let wishItem=JSON.parse(localStorage.getItem('wish'))
+
+      totalItemInWish.innerHTML=wishItem.length;
+
+      totalItemInWish.style.backgroundColor='yellow'
+
+      totalItemInWish.style.color='red'
+
+      totalItemInWish.style.fontWeight='bold'
+      
+
+
+  }
+
+  totalItemInWishFun();
+
+
+
+
+  
+  let totalItemInCartFun=()=>{
+    let totalItemIncart=document.querySelector('.totalItemInCart')
+
+    let cartItem=JSON.parse(localStorage.getItem('cartData'))
+
+    console.log(cartItem)
+    totalItemIncart.innerHTML=cartItem.length;
+
+    totalItemIncart.style.backgroundColor='yellow'
+
+    totalItemIncart.style.color='red'
+
+    totalItemIncart.style.fontWeight='bold'
+    
+
+
+}
+
+totalItemInCartFun();
   
   
