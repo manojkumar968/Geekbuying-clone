@@ -452,6 +452,9 @@ function  btnwish(el){
         wishData.push(el);
         console.log(wishData)
         localStorage.setItem("wish",JSON.stringify(wishData));
+
+        totalItemInWishFun();
+        alert("Item Successfully Added To Your wish")
 }
 
 
@@ -483,3 +486,48 @@ cartData.map(function(el){
 
   document.querySelector("#slideshow-container11").append(div);
 });
+
+
+
+
+let totalItemInCartFun=()=>{
+    let totalItemIncart=document.querySelector('.totalItemInCart')
+
+    let cartItem=JSON.parse(localStorage.getItem('cartData'))
+
+    console.log(cartItem)
+    totalItemIncart.innerHTML=cartItem.length;
+
+    totalItemIncart.style.backgroundColor='yellow'
+
+    totalItemIncart.style.color='red'
+
+    totalItemIncart.style.fontWeight='bold'
+    
+
+
+}
+
+totalItemInCartFun();
+
+
+
+
+let totalItemInWishFun=()=>{
+    let totalItemInWish=document.querySelector('.totalItemInWish')
+
+    let wishItem=JSON.parse(localStorage.getItem('wish'))
+
+    totalItemInWish.innerHTML=wishItem.length;
+
+    totalItemInWish.style.backgroundColor='yellow'
+
+    totalItemInWish.style.color='red'
+
+    totalItemInWish.style.fontWeight='bold'
+    
+
+
+}
+
+totalItemInWishFun();
