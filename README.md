@@ -104,7 +104,9 @@ Learnings 📒:
 * ADD TO WISH-LIST PAGE-
   
 
-                                                                                                     ![Screenshot (191)](https://user-images.githubusercontent.com/101578846/190416797-97ca0f79-75fe-4242-a6d4-67e17e0093a8.png)
+    <div>                                                                                               
+    <img align="center" alt="Coding" heigh="50" width="80%" src="https://miro.medium.com/max/1400/0*cx1lYDOT2c1WwV8W" style="max-width: 100%>
+</div> 
                         
 
 * when you click on any of the product add to wishlist button just simply send this product to add to the wishlist page when all the information with the total price is also given on the right side box.
